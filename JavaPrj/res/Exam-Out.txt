@@ -1,0 +1,2 @@
+total is 116
+avg is 38.666668
