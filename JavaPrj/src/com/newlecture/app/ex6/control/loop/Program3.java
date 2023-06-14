@@ -17,10 +17,9 @@ public class Program3 {
 
 			// 필요없는 데이터 건너뛰어 넘기.
 			
-			for(int i=0;i<18;i++) {
+			for(int i=0;i<18;i++) 
 				fis.read();
-				
-			}
+			
 
 			n1 = fis.read();
 			n2 = fis.read();

@@ -14,7 +14,7 @@ public class Ex1 {
 		while(true) {
 			System.out.println(a);
 			while (true) {
-				System.out.println("가즈");
+				System.out.println("가즈아");
 			}
 		}
 		
