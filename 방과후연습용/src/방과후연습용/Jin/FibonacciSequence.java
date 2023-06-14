@@ -12,12 +12,13 @@ public class FibonacciSequence {
 		int z=0;
 		
 			System.out.println(x);
+			
 		for(int i=0;i<3;i++) {
-			z=x+y;//z=1
+			z=x+y;//z에 x(1)+y(0)값을 넣어준다. 결과 : 1
 			System.out.println(z);
-			y=z+x;//y=2
+			y=z+x;//y에 z(1)+x(1) 넣어준다. 결과 : 2
 			System.out.println(y);
-			x=y+z;//x=3
+			x=y+z;//x에 z(1)+y(2) 넣어준다. 결과 : 3
 			System.out.println(x);
 		}
 		

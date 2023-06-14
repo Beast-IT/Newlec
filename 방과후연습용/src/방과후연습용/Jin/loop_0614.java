@@ -12,28 +12,36 @@ public class loop_0614 {
 		Scanner sc = new Scanner(System.in); //시험 점수 입력받기
 
 		System.out.print("성적 입력 : ");
-		int grade = sc.nextInt();
+		int grade = sc.nextInt(); //Grade에 성적 값 저
 
+		// 90이상 100이하이면 "A" 출력
 		if (90 <= grade && grade <= 100) {
 			System.out.println("당신의 성적은 A");
 		}
-		if (80 <= grade && grade <= 89) {
+		// 80이상 90미이면 "B" 출력
+		if (80 <= grade && grade < 90) {
 			System.out.println("당신의 성적은 B");
 		}
-		if (70 <= grade && grade <= 79) {
+		// 70이상 80미만이면 "C" 출력
+		if (70 <= grade && grade < 80) {
 			System.out.println("당신의 성적은 C");
 		}
-		if (60 <= grade && grade <= 69) {
+		// 60이상 70미만이면 "D" 출력
+		if (60 <= grade && grade < 70) {
 			System.out.println("당신의 성적은 D");
 		}
+		// 60미만이면 "F" 출력
 		if (grade < 60) {
 			System.out.println("당신의 성적은 F! 공부하세요");
 		}
 		System.out.println("----------------------------------------");
+		
+		
 		// 1에서 100사이의 홀수 개수를 출력하세요.
 
 		int oddnum = 0; //홀수 개수 초기화.
 
+		//oddnum을 2로 나눈 나머지가 1이면 oddnum에 +1씩 증가시켜줘서 카운딩한다.
 		for (int i = 0; i < 100; i++) {
 			if ((i % 2) == 1) {
 				oddnum++;
@@ -44,22 +52,20 @@ public class loop_0614 {
 		System.out.println("----------------------------------------");
 		// 66 을 소인수분해하시오. 2,3,11
 
-		int primeFactorization = 66;
+		int primeFactorization = 66; //초기값 66을 저장.
 
+		// 1은 소수가 아니므로 i의 기준을 2로 잡음.
 		for (int i = 2; i <= primeFactorization; i++) {
+			// 66을 i(2)로 나누면 나머지 0, true값이니 while문 실행
 			while ((primeFactorization % i) == 0) {
+				// 2는 소수이면서 합성수 66을 구성하는 소수이므로 2출력
 				System.out.println(i);
+				//66을 2로 나눠준 값 33을 primeFactorization에 저장.
 				primeFactorization = primeFactorization / i;
 			}
 
 		}
 
-//		while (div <= 66) {
-//			if ((primeFactorization % div) == 0) {
-//				System.out.printf("%d ", div);
-//			}
-//			div++;
-//		}
 		System.out.println();
 
 		System.out.println("----------------------------------------");
