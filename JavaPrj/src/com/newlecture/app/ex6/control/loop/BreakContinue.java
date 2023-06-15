@@ -18,6 +18,9 @@ import java.util.Scanner;
 //문제 1)파일에서 성적을 5번째 까지만 읽어서 다음처럼 화면에 출력하시오
 //30, 49, 38, 49, 50, 
 
+//문제 2) 파일에서 성적을 5번부터 읽어서 다음처럼 화면에 출력하시오.
+//50, 80, 90, 100, 70, 50, 60, 74, 50, 33, 50, 65, 76, 69,
+
 public class BreakContinue {
 
 	public static void main(String[] args) throws IOException {
@@ -28,23 +31,28 @@ public class BreakContinue {
 		FileOutputStream fos = new FileOutputStream("res/exam_out.list");
 		PrintWriter fout = new PrintWriter(fos, true, Charset.forName("UTF-8"));
 		
-		int index =1;
+		
 		
 		//문제 0
 		for(int i=0;fscan.hasNext();i++)
 		{
 			
+				
 			String word =fscan.next();
 			int kor = Integer.valueOf(word);			
-			System.out.printf("%d, ",kor);//콘솔에 출력하기.
-			fout.printf("%d, ",kor);//파일에 출력하기.
 			
 			
 			//문제 1 
-			if(index==5)
+			
+			if(i>=5)// 0 1 2 3 4
 				break;
-
-			index++;
+			
+			System.out.printf("%d, ",kor);//콘솔에 출력하기.
+			fout.printf("%d, ",kor);//파일에 출력하기.
+			
+//			if(i>=4) //0 1 2 3 4
+//				break;
+			
 		}
 		
 		
