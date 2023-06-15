@@ -31,18 +31,19 @@ public class BreakContinue {
 
 		FileOutputStream fos = new FileOutputStream("res/exam_out.list");
 
-		boolean print = false;
-
-		for (int i = 0; fscan.hasNext(); i++) {
+	
+		// 문제 3) 파일에서 성적을 읽다가 100점을 만나면 그 이후의 성적을 모두 출력하시오. (쌤방식) 
+		for (boolean found=false;fscan.hasNext();) {
 
 			String word = fscan.next();
 			int kor = Integer.valueOf(word);
-
-			//문제 3) 파일에서 성적을 읽다가 100점을 만나면 그 이후의 성적을 모두 출력하시오.
-			if (kor == 100)
-				print = true;
 			
-			if (print)
+			if(kor==100)
+				found=true;
+
+			if(!found)
+				continue;
+			
 				System.out.printf("%d, ", kor);// 콘솔에 출력하기.
 
 		}
