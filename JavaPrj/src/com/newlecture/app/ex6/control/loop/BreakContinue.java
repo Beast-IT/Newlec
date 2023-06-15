@@ -33,18 +33,16 @@ public class BreakContinue {
 
 		FileOutputStream fos = new FileOutputStream("res/exam_out.list");
 
-		// 문제 3) 파일에서 성적을 읽다가 100점을 만나면 그 이후의 성적을 모두 출력하시오. (쌤방식)
 		for (boolean found = false; fscan.hasNext();) {
 
 			String word = fscan.next();
 			int kor = Integer.valueOf(word);
 
-			if (kor == 100) {
+			if (kor == 100) 
 				found = true;
-				continue;//100 건너뛰기! 
-			}
-
-			if (!found)
+		
+			
+			if (!found || (kor==100))//if(kor==100) continue;를 조건연산자를 통해 하나로 합쳤음.
 				continue;
 
 			System.out.printf("%d, ", kor);// 콘솔에 출력하기.
