@@ -52,7 +52,7 @@ public class loop_0614 {
 		System.out.println("----------------------------------------");
 		// 66 을 소인수분해하시오. 2,3,11
 
-		int primeFactorization = 66; //초기값 66을 저장.
+		int primeFactorization = 44; //초기값 66을 저장.
 
 		// 1은 소수가 아니므로 i의 기준을 2로 잡음.
 		for (int i = 2; i <= primeFactorization; i++) {
@@ -62,6 +62,8 @@ public class loop_0614 {
 				System.out.println(i);
 				//66을 2로 나눠준 값 33을 primeFactorization에 저장.
 				primeFactorization = primeFactorization / i;
+				
+				i=2;//i를2로 초기화 완료!
 			}
 
 		}
@@ -71,13 +73,8 @@ public class loop_0614 {
 		System.out.println("----------------------------------------");
 		// ✏️ 1!+2!+3!+4!+5!의 결과를 구하세요. (Factorial) 답 153
 
-		int j=0;
-		int psum=0;
-		for(int i=5;i<0;i--) {
-			psum=psum+(i*j);
-			
-		}
-		System.out.println(psum);
+		
+		
 		
 		System.out.println("----------------------------------------");
 		// ✏️사용자로부터 정수를 입력받아 총합이 100이 넘을 때까지 반복하는 코드를 작성하세요. 출력은 다음과 같습니다.
