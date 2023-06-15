@@ -52,7 +52,7 @@ public class loop_0614 {
 		System.out.println("----------------------------------------");
 		// 66 을 소인수분해하시오. 2,3,11
 
-		int primeFactorization = 44; //초기값 66을 저장.
+		int primeFactorization = 2345; //초기값 66을 저장.
 
 		// 1은 소수가 아니므로 i의 기준을 2로 잡음.
 		for (int i = 2; i <= primeFactorization; i++) {
@@ -63,7 +63,6 @@ public class loop_0614 {
 				//66을 2로 나눠준 값 33을 primeFactorization에 저장.
 				primeFactorization = primeFactorization / i;
 				
-				i=2;//i를2로 초기화 완료!
 			}
 
 		}

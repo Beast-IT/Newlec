@@ -31,7 +31,7 @@ public class BreakContinue {
 		int index =1;
 		
 		//문제 0
-		while(fscan.hasNext())
+		for(int i=0;fscan.hasNext();i++)
 		{
 			
 			String word =fscan.next();
