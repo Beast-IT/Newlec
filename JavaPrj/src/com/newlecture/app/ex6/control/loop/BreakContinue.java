@@ -33,25 +33,22 @@ public class BreakContinue {
 		
 		
 		
-		//문제 0
+		
 		for(int i=0;fscan.hasNext();i++)
 		{
 			
 				
-			String word =fscan.next();
-			int kor = Integer.valueOf(word);			
+			String word =fscan.next();	
+			int kor = Integer.valueOf(word);	
 			
-			
-			//문제 1 
-			
-			if(i>=5)// 0 1 2 3 4
-				break;
+			//문제 i가 0 1 2 3 읽어오고 콘솔에 출력을 안하고 날려버린다. Continue로 쌩
+			if(i<4) 
+				continue;
 			
 			System.out.printf("%d, ",kor);//콘솔에 출력하기.
 			fout.printf("%d, ",kor);//파일에 출력하기.
 			
-//			if(i>=4) //0 1 2 3 4
-//				break;
+
 			
 		}
 		
