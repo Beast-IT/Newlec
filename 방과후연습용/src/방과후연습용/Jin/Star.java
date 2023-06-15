@@ -15,9 +15,22 @@ public class Star {
 				System.out.printf("*");
 
 			System.out.println();
+//			----------------------------------------
 
 			// i 0 1 2 3
 			// k 1 3 5 7
+		}
+		
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < i + 1; j++) {
+				System.out.printf(" ");
+
+			}
+
+			for (int k = 0; k < 5 - (i * 2); k++)
+				System.out.printf("*");
+
+			System.out.println();
 		}
 	}
 }
