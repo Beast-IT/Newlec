@@ -41,7 +41,7 @@ public class BreakContinue {
 			String word =fscan.next();	
 			int kor = Integer.valueOf(word);	
 			
-			//문제 i가 0 1 2 3 읽어오고 콘솔에 출력을 안하고 날려버린다. Continue로 쌩
+			//문제2)  i가 0(1번째) 1(2번째) 2(3번째) 3(4번째) 읽어오고 콘솔에 출력을 안하고 날려버린다. Continue로 밑에 출력을 쌩깐다.
 			if(i<4) 
 				continue;
 			
