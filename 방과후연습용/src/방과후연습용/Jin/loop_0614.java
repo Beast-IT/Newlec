@@ -103,6 +103,6 @@ public class loop_0614 {
 		}
 		System.out.println("종료!");
 
-	}
+	} //end main
 
 }
