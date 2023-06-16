@@ -26,6 +26,9 @@ import java.util.Scanner;
 
 //문제 5) 파일에서 성적을 다가 두 번째 100점 이후의 성적을 모두 출력하시오. (100점 미포함) 33 50 65 76 69 
 
+//문제 6) 파일에서 성적을 5번부터 8번째 까지만 읽어서 다음처럼 화면에 출력하시오.50, 80, 90, 100  
+
+
 public class BreakContinue {
 
 	public static void main(String[] args) throws IOException {
@@ -35,20 +38,26 @@ public class BreakContinue {
 
 
 		
-		for (int count=0; fscan.hasNext();) {
+		int count =0;
 
-			String word = fscan.next();
-			int kor = Integer.valueOf(word);
+ 		for (boolean found = false; fscan.hasNext();) {
 
-			//100을 만날때 마다 count +1 해준다.
-			if (kor == 100)
-				count++;
-			
-			// 100을 만나도 ||연산자니까 패스한다.
-			if(count<2||kor==100)
-				continue;
-			
-			System.out.printf("%d, ",kor);
+ 			String word = fscan.next();
+ 			int kor = Integer.valueOf(word);
+ 			
+ 			count++;
+
+ 			if(count ==5) 
+ 				found = true;
+ 				
+ 				
+ 				if(count > 8) {
+ 					found=false;
+ 					break;
+ 				}
+ 				if (found)
+ 					System.out.printf("%d, ", kor);// 콘솔에 출력하기.
+ 			
 				
 			}
 			
