@@ -38,27 +38,21 @@ public class BreakContinue {
 
 
 		
-		int count =0;
+		
 
- 		for (boolean found = false; fscan.hasNext();) {
+ 		for (int i=0; fscan.hasNext();i++) {
 
  			String word = fscan.next();
  			int kor = Integer.valueOf(word);
  			
- 			count++;
-
- 			if(count ==5) 
- 				found = true;
- 				
- 				
- 				if(count > 8) {
- 					found=false;
- 					break;
- 				}
- 				if (found)
- 					System.out.printf("%d, ", kor);// 콘솔에 출력하기.
+ 			if(i<4) // 0, 1, 2, 3, 4
+ 				continue;
  			
-				
+ 			if(i>9) //0 1 2 3 4 5 6 7 8
+ 				break;
+ 			
+ 			System.out.printf("%d, ",kor);
+ 			
 			}
 			
 		fscan.close();
