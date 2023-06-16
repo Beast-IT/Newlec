@@ -31,23 +31,7 @@ public class OmokProgram {
 						else
 							System.out.print("┼");
 							
-						
-					
 				}
-					
-				/*
-						
-			
-						
-					else if (y == 0)// 왼쪽 막기
-						System.out.print("├");
-					else if (y == 11)// 오른쪽 막기
-						System.out.print("┤");
-				
-					else
-						System.out.print("┼");
-*/				
-
 				System.out.println();
 			}
 		}
