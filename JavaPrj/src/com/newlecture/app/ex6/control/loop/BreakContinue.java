@@ -33,35 +33,31 @@ public class BreakContinue {
 		FileInputStream fis = new FileInputStream("res/exam.list");
 		Scanner fscan = new Scanner(fis);
 
-		FileOutputStream fos = new FileOutputStream("res/exam_out.list");
 
-		int count=0;
 		
-		for (boolean found = false; fscan.hasNext();) {
+		for (int count=0; fscan.hasNext();) {
 
 			String word = fscan.next();
 			int kor = Integer.valueOf(word);
 
+			//100을 만날때 마다 count +1 해준다.
 			if (kor == 100)
 				count++;
 			
-			if (found)
-				System.out.printf("%d, ", kor);// 콘솔에 출력하기.
+			// 100을 만나도 ||연산자니까 패스한다.
+			if(count<2||kor==100)
+				continue;
 			
-			if(count==2) {
-				found = true;
+			System.out.printf("%d, ",kor);
 				
 			}
 			
-		
-
-		}
-
-		fos.close();
-
 		fscan.close();
 		fis.close();
 
+		}
+
+		
 	}
 
-}
+
