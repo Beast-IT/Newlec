@@ -24,6 +24,8 @@ import java.util.Scanner;
 
 //문제 4) 파일에서 성적을 읽다가 100점을 만나면 그 이후의 성적을 모두 출력하시오.(100미포함)
 
+//문제 5) 파일에서 성적을 다가 두 번째 100점 이후의 성적을 모두 출력하시오. (100점 미포함) 33 50 65 76 69 
+
 public class BreakContinue {
 
 	public static void main(String[] args) throws IOException {
@@ -33,19 +35,25 @@ public class BreakContinue {
 
 		FileOutputStream fos = new FileOutputStream("res/exam_out.list");
 
+		int count=0;
+		
 		for (boolean found = false; fscan.hasNext();) {
 
 			String word = fscan.next();
 			int kor = Integer.valueOf(word);
 
-			if (kor == 100) 
-				found = true;
-		
+			if (kor == 100)
+				count++;
 			
-			if (!found || (kor==100))//if(kor==100) continue;를 조건연산자를 통해 하나로 합쳤음.
-				continue;
-
-			System.out.printf("%d, ", kor);// 콘솔에 출력하기.
+			if (found)
+				System.out.printf("%d, ", kor);// 콘솔에 출력하기.
+			
+			if(count==2) {
+				found = true;
+				
+			}
+			
+		
 
 		}
 
