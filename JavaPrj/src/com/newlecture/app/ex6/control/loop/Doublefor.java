@@ -15,6 +15,8 @@ public class Doublefor {
 					System.out.print("c ");
 				else
 					System.out.printf("%d ", i + 1);
+				
+			
 
 			}
 
