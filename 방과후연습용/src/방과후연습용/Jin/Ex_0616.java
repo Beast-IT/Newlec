@@ -1,5 +1,7 @@
 package 방과후연습용.Jin;
 
+import java.io.Serial;
+
 //✏️for문을 이용하여  다음처럼 구구단 표를 출력해보세요.
 //2 * 1 = 2
 //2 * 2 = 4
