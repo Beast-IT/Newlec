@@ -11,7 +11,9 @@ public class OmokProgram {
 		 * 
 		 * 
 		 * 
-		 * 문제푼날: 230619 풀이: 나 핵심: 조건을 잘 생각한다 !
+		 * 문제푼날: 230619 
+		 * 풀이: 나 
+		 * 핵심: 조건을 잘 생각한다 !
 		 */
 
 		String arr[][] = new String[12][12];// 12*12 바둑판 배열
@@ -52,9 +54,71 @@ public class OmokProgram {
 		}
 		// ----------------------------------------------------
 
+		//바둑판 출력
 		while (true) {
 			
+			for (int i = 0; i < 12; i++) {
+				for (int j = 0; j < 12; j++) {
+					System.out.print(arr[i][j]);
+				}
+				System.out.println();
+			}
 			
+			System.out.println("그만두기 : -1");
+			
+			System.out.print("검은돌 [X sp Y] : ");
+			ox = scan.nextInt();// x값 좌표 받아오기.
+			if (ox == -1)// -1을 받으면 종료한다.
+				break;
+			oy = scan.nextInt();// y값 좌표 받아오기.
+			if(chk[ox][oy]) {
+				System.out.println("중복값 입니다. ");
+				continue;
+				}
+			
+			for (int i = 0; i < 12; i++) {
+				for (int j = 0; j < 12; j++) { 
+					if (i == ox && j == oy) // 입력받은 값을 바둑판에 ○ 출력(제일 우선순위를 가진다.)
+						arr[i][j] = "○";
+					else if (i == wx && j == wy)  // 입력받은 값을 바둑판에 ● 출력(제일 우선순위를 가진다.)
+						arr[i][j] = "●";
+				
+				chk[i][j]=true;
+				}
+			}
+			
+			System.out.println("그만두기 : -1");
+			
+			System.out.print("흰돌 [X sp Y] : ");
+			wx = scan.nextInt();// x값 좌표 받아오기.
+			if (wx == -1)// -1을 받으면 종료한다.
+				break;
+			wy = scan.nextInt();// y값 좌표 받아오기.
+			if(chk[wx][wy]) {
+				System.out.println("중복값 입니다. ");
+				continue;
+			}
+			
+			for (int i = 0; i < 12; i++) {
+				for (int j = 0; j < 12; j++) { 
+					if (i == ox && j == oy) // 입력받은 값을 바둑판에 ○ 출력(제일 우선순위를 가진다.)
+						arr[i][j] = "○";
+					else if (i == wx && j == wy)  // 입력받은 값을 바둑판에 ● 출력(제일 우선순위를 가진다.)
+						arr[i][j] = "●";
+				
+				chk[i][j]=true;
+				}
+			}
+			
+			while (true) {
+				
+				for (int i = 0; i < 12; i++) {
+					for (int j = 0; j < 12; j++) {
+						System.out.print(arr[i][j]);
+					}
+					System.out.println();
+				}
+			/*
 			System.out.println("그만두기 : -1");
 
 			System.out.print("검은돌 [X sp Y] : ");
@@ -100,11 +164,11 @@ public class OmokProgram {
 				System.out.println();
 			}
 
-
+*/
 		}
 
 	}// 지역화
 }// end main
-
+}
 
 //●○		
