@@ -1,52 +1,68 @@
 package 방과후연습용.Jin;
 
-import java.util.Scanner;
-
 public class Star {
 
 	public static void main(String[] args) {
+		System.out.println("1번 ------------------------------------------------------------------------------------");
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < (i + 1); j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		System.out.println("2번 ------------------------------------------------------------------------------------");
 
-		Scanner sc = new Scanner(System.in);
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < (5 - i); j++) {
+				System.out.print("*");
+			}
+			System.out.println();
 
-		System.out.print("숫자 입력 : ");
-		int input = sc.nextInt();
+		}
+		System.out.println("3번 ------------------------------------------------------------------------------------");
 
-		int a = 0;
-		int b = 0;
-
-		a = (int) (input / 2) + 1;
-		b = (int) (input / 2);
-
-		System.out.println(a);
-		System.out.println(b);
-
-		for (int i = 0; i < a; i++) {
-
-			for (int j = 0; j < (a - 1) - i; j++) {
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 5 - (i + 1); j++)
 				System.out.printf(" ");
+			for (int k = 0; k < (i + 1); k++)
+				System.out.printf("*");
 
+			System.out.println();
+		}
+		System.out.println("4번 ------------------------------------------------------------------------------------");
+		for (int i = 0; i < 5; i++) {
+			for (int k = 0; k < i; k++)
+				System.out.printf(" ");
+			for (int j = 0; j < 5 - i; j++)
+				System.out.printf("*");
+
+			System.out.println();
+		}
+		System.out.println("5번 ------------------------------------------------------------------------------------");
+		for (int i = 0; i < 5; i++) {
+
+			// i=0일때 "j < (3 - i)" -> 공백 " "3개 출력
+			for (int j = 0; j < (4 - i); j++) {
+				System.out.printf(" ");
 			}
 
+			// i=0일때 "k < 1 + (i * 2)" -> 별 "*"개 출력
 			for (int k = 0; k < 1 + (i * 2); k++)
 				System.out.printf("*");
 
 			System.out.println();
-//			----------------------------------------
-
-			// i 0 1 2 3
-			// k 1 3 5 7
 		}
-
-		for (int i = 0; i < b; i++) {
-			for (int j = 0; j < i + 1; j++) {
+		System.out.println("6번 ------------------------------------------------------------------------------------");
+		for (int i = 0; i < 9; i++) {
+			// i=0일때 "j < (i + 1)" -> 공백 " " 1개 출력
+			for (int j = 0; j < (i + 1); j++) {
 				System.out.printf(" ");
-
 			}
-
-			for (int k = 0; k < b * 2 - (i * 2) - 1; k++)
+			// i=0일때 "k < 5 - (i * 2)" -> 별 "*****" 출력
+			for (int k = 0; k < 9 - (i * 2); k++)
 				System.out.printf("*");
 
 			System.out.println();
 		}
-	}
+	}// end main
 }
