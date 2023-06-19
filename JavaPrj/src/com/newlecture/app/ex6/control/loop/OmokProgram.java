@@ -12,7 +12,7 @@ public class OmokProgram {
 		 * 
 		 * 문제푼날: 230619 
 		 * 풀이: 나 
-		 * 핵심: X=Y를 넣는다.
+		 * 핵심: (1,7) (2,6) (3,5)...(7,1) 좌표의 합이 8로 같다! 
 		 */
 		for (int x = 0; x < 12; x++) {
 			for (int y = 0; y < 12; y++)
@@ -32,9 +32,7 @@ public class OmokProgram {
 					System.out.print("├");
 				else if (y == 11)// 오른쪽 막기
 					System.out.print("┤");
-				else if (x == y && y == x)
-					System.out.print("●");
-				else if (x == (12-(y+1)) && y == (12-(x+1)))
+				else if (x+y==8)
 					System.out.print("●");
 				else
 					System.out.print("┼");
