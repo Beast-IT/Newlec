@@ -53,24 +53,24 @@ public class OmokProgram {
 				int oy = 0;
 
 				//x y 좌표 입력 받음. 
-				System.out.print("\t(X sp Y) : ");
-				ox = scan.nextInt();
-				oy = scan.nextInt();
-				
-				//-1이면 종료
-				if(ox==-1) {
-					System.out.println("프로그램 종료.");
-					break;
-				}
-				
-				//정상 입력범위 찾기.
-				while (!(1<=ox && ox<=10) || !(1<=oy && oy<=10)) {
-					System.out.println("오목 좌표의 범위(-1 or 1~10)를 벗어났습니다.");
+				do {
 					System.out.print("\t(X sp Y) : ");
-					
 					ox = scan.nextInt();
 					oy = scan.nextInt();
-				}
+					
+					//-1이면 종료
+					if(ox==-1||oy==-1) {
+						System.out.println("프로그램 종료.");
+						return;
+					}
+					
+					if(!(1<=ox && ox<=10) || !(1<=oy && oy<=10))
+					System.out.println("오목 좌표의 범위(-1 or 1~10)를 벗어났습니다.");
+				
+				//정상 입력범위 찾기.
+				}while (!(1<=ox && ox<=10) || !(1<=oy && oy<=10));
+					
+				
 
 				
 
