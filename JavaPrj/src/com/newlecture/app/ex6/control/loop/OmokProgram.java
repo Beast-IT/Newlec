@@ -45,7 +45,6 @@ public class OmokProgram {
 				System.out.println();
 			}
 			// ----------------------------------------------------초기 바둑판 숫자 입력 후 출력
-
 			while (true) {
 				Scanner scan = new Scanner(System.in);
 				
@@ -54,14 +53,15 @@ public class OmokProgram {
 
 				//x y 좌표 입력 받음. 
 				do {
-					System.out.print("\t(X sp Y) : ");
+					System.out.println("그만두기:-1 0");
+					System.out.print("(X sp Y) : ");
 					ox = scan.nextInt();
 					oy = scan.nextInt();
 					
 					//-1이면 종료
 					if(ox==-1||oy==-1) {
 						System.out.println("프로그램 종료.");
-						return;
+						return;//정상적인 종료는 아님. (임시로 쓰는 것) 
 					}
 					
 					if(!(1<=ox && ox<=10) || !(1<=oy && oy<=10))
