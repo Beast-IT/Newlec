@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class OmokProgram2 {
 
-<<<<<<< HEAD
-    public static void main(String[] args) {
+
+    public static void main1(String[] args) {
 
         OUT:
         while (true) {
@@ -103,8 +103,8 @@ public class OmokProgram2 {
             }//switch 괄호
         }
     }
-}
-=======
+
+
 	public static void main(String[] args) {
 
 		QUIT:
@@ -221,4 +221,4 @@ public class OmokProgram2 {
 
 	}// end main
 }
->>>>>>> origin/mmm
+
