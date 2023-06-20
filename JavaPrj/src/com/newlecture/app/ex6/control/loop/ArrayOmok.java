@@ -2,7 +2,7 @@ package com.newlecture.app.ex6.control.loop;
 
 import java.util.Scanner;
 
-public class OmokProgram {
+public class ArrayOmok {
 
     public static void main(String[] args) {
 
