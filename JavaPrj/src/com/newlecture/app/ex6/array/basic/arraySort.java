@@ -18,22 +18,22 @@ import java.util.Scanner;
 	 * 풀이: 나
 	 * 핵심: 줄어드는 값과 고정된 값이 무엇인지 구분한다.
 	 * */
-public class array {
+public class arraySort {
 	public static void main(String[] args) throws IOException {
-		int[] nums = new int[100];// 숫자 저장 공간
+		int[] nums = new int[12];// 숫자 저장 공간
 		int temp = 0;
 		int index = 0;
 
-		int size=0;//데이터Size측정 
-		
 		// 값 로드하기
 		{
 			FileInputStream fis = new FileInputStream("res/Data/data.txt");
 			Scanner sc = new Scanner(fis);
-			for (int i = 0; sc.hasNext(); i++) {
+			
+			
+
+			for (int i = 0; sc.hasNext(); i++)
 				nums[i] = sc.nextInt();
-				size++;
-			}
+			
 			sc.close();
 			fis.close();
 		}
@@ -41,7 +41,7 @@ public class array {
 		//nums 출력하기
 		//100, 23, ...70
 		{
-			for(int i=0;i<size;i++)
+			for(int i=0;i<nums.length;i++)
 				System.out.printf("%3d ",nums[i]);
 		}
 		System.out.println();
@@ -49,7 +49,7 @@ public class array {
 		
 		// 위치 찾기
 		{
-			for (int i = 0; i < size; i++)
+			for (int i = 0; i < nums.length; i++)
 				if (nums[i] == 90)
 					index = i;
 		}
@@ -67,11 +67,11 @@ public class array {
 			PrintWriter fout = new PrintWriter(fos, true, Charset.forName("UTF-8"));
 			
 			//파일 출력
-			for(int i=0;i<size;i++)
+			for(int i=0;i<nums.length;i++)
 				fout.printf("%d ",nums[i]);
 			
 			//콘솔 출력 
-			for(int i=0;i<size;i++)
+			for(int i=0;i<nums.length;i++)
 				System.out.printf("%3d ",nums[i]);
 			
 			fout.close();
