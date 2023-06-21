@@ -13,7 +13,7 @@ public class OmokProgram2 {
             Scanner scan = new Scanner(System.in);
 
             System.out.println("┌───────────────────────────┐");
-            System.out.println("│          Omok Game                                  │");
+            System.out.println("│          Omok Game        │");
             System.out.println("└───────────────────────────┘");
             System.out.println();
 
@@ -111,7 +111,7 @@ public class OmokProgram2 {
 		while (true) {
 
 			System.out.println("┌────────────┐ ");
-			System.out.println("│       Omok Game       │ ");
+			System.out.println("│ Omok Game  │ ");
 			System.out.println("└────────────┘");
 			System.out.println();
 			System.out.println("1. 게임시작");
