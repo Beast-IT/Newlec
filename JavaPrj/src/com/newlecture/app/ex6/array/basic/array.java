@@ -21,15 +21,14 @@ import java.util.Scanner;
 public class array {
 	public static void main(String[] args) throws IOException {
 		int[] nums = new int[100];// 숫자 저장 공간
-		int temp = 0;
-		int index = 0;
 
-		int size=0;//데이터Size측정 
+		int size=0;//데이터 Size측정
 		
 		// 값 로드하기
 		{
-			FileInputStream fis = new FileInputStream("res/Data/data.txt");
+			FileInputStream fis = new FileInputStream("JavaPrj/res/Data/data.txt");
 			Scanner sc = new Scanner(fis);
+			
 			for (int i = 0; sc.hasNext(); i++) {
 				nums[i] = sc.nextInt();
 				size++;
@@ -45,25 +44,28 @@ public class array {
 				System.out.printf("%3d ",nums[i]);
 		}
 		System.out.println();
-		
-		
+
+		int index = -1;// index가 0부터 시작하면 배열에서 0값으로 인식할 수 있어서 범위 밖에있는 값 지정.
 		// 위치 찾기
 		{
 			for (int i = 0; i < size; i++)
-				if (nums[i] == 90)
+				if (nums[i] == 90) {
 					index = i;
+					break;//효율을 위해서!
+				}
 		}
 
 		// 값 바꾸기
 		{
+			int temp;//여기서 밖에 안써서 지역화 구역에서 변수를 선언했음
 			temp = nums[index];
 			nums[index] = nums[0];
 			nums[0]=temp;
 		}
-		
+
 		// 값 저장하기
 		{
-			FileOutputStream fos = new FileOutputStream("res/Data/data_out.txt");
+			FileOutputStream fos = new FileOutputStream("JavaPrj/res/Data/data.txt");
 			PrintWriter fout = new PrintWriter(fos, true, Charset.forName("UTF-8"));
 			
 			//파일 출력
