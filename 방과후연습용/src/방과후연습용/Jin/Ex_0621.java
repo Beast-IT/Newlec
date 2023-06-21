@@ -1,5 +1,7 @@
 package 방과후연습용.Jin;
 
+import java.util.Scanner;
+
 public class Ex_0621 {
     public static void main(String[] args) {
         //✏️ 각 기본형 타입별 배열을 모두 선언해보세요. int, byte, boolean 등
@@ -50,9 +52,110 @@ public class Ex_0621 {
                 ch[i]='b';
                 System.out.println(ch[i]);
             }
+        }
+            //✏️ (추가)
+            //
+            //선언부와 출력부를 수정하지 말고 코드를 작성해
+            //
+            //3
+            //5
+            //7
+            //
+            //과 같이 출력해보세요.
+            //
+            ////—-------------------------- 선언부
+            //
+            //int a = 5;
+            //int b = 7;
+            //int c = 3;
+            //
+            ////—-------------------------- 코드작성 부분
+            //
+            //
+            //
+            //
+            ////—-------------------------- 출력부
+            //
+            //
+            //System.out.println(a); // 3
+            //System.out.println(b); // 5
+            //System.out.println(c); // 7
+
+        // —-------------------------- 선언부
+            System.out.println();
+            int a = 5;
+            int b = 7;
+            int c = 3;
+
+        //—-------------------------- 코드작성 부분
+            int temp=0;
+
+            temp=a; //temp : 5 / a : 0
+            a=b;// b : 5 /
+            b=temp;
+
+            temp=a;
+            a=c;
+            c=temp;
 
 
+
+
+        //—-------------------------- 출력부
+
+
+            System.out.println(a); // 3
+            System.out.println(b); // 5
+            System.out.println(c); // 7
+
+        //✏️ (추가2)
+        //다음과 같은 결과를 출력해보세요.
+        //1을 입력하면 계속 메뉴를 선택하고 9를 누르면 종료가 되는 프로그램을 만들어보세요.
+        //
+        //메뉴를 선택하시오.
+        //1.계속	9.종료
+        //9                                 //—----------------> (입력값)
+        //종료되었습니다.
+        Scanner sc=new Scanner(System.in);
+
+        end:
+        while(true) {
+            System.out.println("메뉴를 선택하시오.");
+            System.out.println("1.계속 9.종료");
+            int menu = sc.nextInt();
+
+            con :
+            while (true) {
+                switch (menu) {
+                    case 1: {
+                         break con;
+                    }
+
+                    case 9: {
+                        System.out.println("종료");
+                        break end;
+                    }
+                }
+            }
         }
 
+        //✏️ (추가3)
+        //// 54321초가 몇시간 몇분 몇초인지 구하시오
+        //// 결과 : 15시간 5분 21초
+        ////( 1분 = 60초, 1시간 = 60분, 1시간 = 60초 * 60초 = 3600초 )
+
+        int sec=54321;
+        int min=0;
+        int hous=0;
+        int temp1=0;
+
+            min=sec/60;
+            temp1=min;
+            hous=min/60;
+            sec=sec%60;
+
+            temp1=temp1%60;
+
+        System.out.printf("%d시간 %d분 %d초",hous,temp1,sec);
     }
 }
