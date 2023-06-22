@@ -55,40 +55,55 @@ public class array {
                 }
         }
 
-        // 값 바꾸기
-        {
-            int temp;//temp라는 변수는 이 구역에서만 사용해서 여기에 변수를 선언했음
-            temp = nums[index];
-            nums[index] = nums[0];
-            nums[0] = temp;
-        }
-        //제일 큰 값 찾기 max방에 저장하기.
-        {
-            int max = nums[0];
+//        // 값 바꾸기
+//        {
+//            int temp;//temp라는 변수는 이 구역에서만 사용해서 여기에 변수를 선언했음
+//            temp = nums[index];
+//            nums[index] = nums[0];
+//            nums[0] = temp;
+//        }
+//        //제일 큰 값 찾기 max방에 저장하기.
+//        {
+//            int max = nums[0];
+//
+//            //2번째(=인덱스1) 숫자부터 겨루기를 해서 왕좌를 탈환하라.
+//            //몇번의 반복? size-1
+//
+//            for (int i = 0; i < size - 1; i++)
+//                if (max < nums[i])
+//                    max = nums[i];
+//
+//            System.out.printf("max : %d\n", max);
+//        }
+//
+//        //제일 큰 값 찾기 옆으로 미루기! 제일 마지막 index값이 큰값이 나온다.
+//        {
+//            //2번째(=인덱스1) 숫자부터 겨루기를 해서 왕좌를 탈환하라.
+//            //몇번의 반복? size-1
+//            for (int i = 0; i < size - 1; i++)
+//                if (nums[i] > nums[i + 1]) {
+//                    int temp = nums[i]; //선생님 변수 선언 방법
+//                    nums[i] = nums[i + 1];
+//                    nums[i + 1] = temp;
+//                }
+//            System.out.printf("max : %d\n", nums[size - 1]);
+//            for (int i = 0; i < size; i++)
+//                System.out.printf("%3d ", nums[i]);
+//            System.out.println();
+//        }
 
-            //2번째(=인덱스1) 숫자부터 겨루기를 해서 왕좌를 탈환하라.
+
+        //최솟값의 인덱스 찾기
+        {
+            int minIndex = 0;
+
             //몇번의 반복? size-1
-
-            for (int i = 0; i < size - 1; i++)
-                if (max < nums[i])
-                    max = nums[i];
-
-            System.out.printf("max : %d\n", max);
-        }
-
-        //제일 큰 값 찾기 옆으로 미루기! 제일 마지막 index값이 큰값이 나온다.
-        {
-            //2번째(=인덱스1) 숫자부터 겨루기를 해서 왕좌를 탈환하라.
-            //몇번의 반복? size-1
-
             for (int i = 0; i < size - 1; i++)
                 if (nums[i] > nums[i + 1]) {
-                    int temp = nums[i]; //선생님 변수 선언 방법
-                    nums[i] = nums[i + 1];
-                    nums[i + 1] = temp;
+                    minIndex = (i + 1);
                 }
 
-            System.out.printf("max : %d\n", nums[size - 1]);
+            System.out.printf("최소값 인덱스는 %d 입니다.\n", minIndex);
         }
 
         // 값 저장하기
