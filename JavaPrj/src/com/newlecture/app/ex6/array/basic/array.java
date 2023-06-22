@@ -78,14 +78,12 @@ public class array {
 
         //제일 큰 값 찾기 옆으로 미루기! 제일 마지막 index값이 큰값이 나온다.
         {
-            int temp = 0;
-
             //2번째(=인덱스1) 숫자부터 겨루기를 해서 왕좌를 탈환하라.
             //몇번의 반복? size-1
 
             for (int i = 0; i < size - 1; i++)
                 if (nums[i] > nums[i + 1]) {
-                    temp = nums[i];
+                    int temp = nums[i]; //선생님 변수 선언 방법
                     nums[i] = nums[i + 1];
                     nums[i + 1] = temp;
                 }

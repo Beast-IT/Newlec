@@ -11,7 +11,7 @@ import java.io.IOException;
  * */
 public class arraySort {
     public static void main(String[] args) throws IOException {
-        int[] nums = {20, 23, 46, 46, 50, 50, 57, 70, 80, 82, 90, 100};// 숫자 저장 공간
+        int[] nums = {100, 23, 46, 46, 50, 50, 57, 70, 80, 82, 90, 20};// 숫자 저장 공간
         int temp = 0;
         int index = 0;
 
