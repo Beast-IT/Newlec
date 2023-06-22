@@ -1,20 +1,10 @@
 package com.newlecture.app.ex6.array.basic;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.nio.charset.Charset;
-import java.util.Scanner;
 
 /*
- * 문제: 파일에서 값 90을 찾아서 그 값을 1번째 위치 값과 바꾸어 저장하시오.
- * 		     *
- * 		    **
- * 		   ***
- * 		  ****
- * 		 *****
+ * 문제:
+
  * 문제푼날: 230621
  * 풀이: 나
  * 핵심: 줄어드는 값과 고정된 값이 무엇인지 구분한다.
@@ -30,9 +20,9 @@ public class arraySort {
         for (i = 0; i < nums.length; i++) {
             int min = 100000;
             for (j = 0; j < nums.length; j++) {
-				if(true){
+                if (min > nums[j]) {
 
-				}
+                }
             }
         }
 
