@@ -92,17 +92,38 @@ public class array {
 //            System.out.println();
 //        }
 
-        //최솟값의 인덱스 찾기
-        {
-            int minIndex = 0;
+//        //최솟값의 인덱스 찾기 ( 위에 값 바꾸기를 주석처리해야지 제대로 나온다)
+//        {
+//            int minIndex = 0;
+//
+//            //몇번의 반복? size-1
+//            for (int i = 0; i < size - 1; i++)
+//                if (nums[minIndex] > nums[i + 1]) {
+//                    minIndex = (i + 1);
+//                }
+//
+//            System.out.printf("최소값 인덱스는 %d 입니다.\n", minIndex);
+//        }
 
+        //정렬하기 (버블정렬)
+        {
+            //1등 찾기 -> 비교를 위한 반복횟수 size -1
+            //2등 찾기 -> 비교를 위한 반복횟수 size -2
+            //3등 찾기 -> 비교를 위한 반복횟수 size -3
+
+            //size-1 등까지 찾기 -> 비교를 위한 반복횟수 1
+            int temp = 0;
             //몇번의 반복? size-1
-            for (int i = 0; i < size - 1; i++)
-                if (nums[minIndex] > nums[i + 1]) {
-                    minIndex = (i + 1);
+
+            for (int i = 0; i < (size - 1); i++)
+                for (int j = 0; j < (size - 1) - i; j++) {
+                    if (nums[j] > nums[j + 1]) {
+                        temp = nums[j]; //선생님 변수 선언 방법
+                        nums[j] = nums[j + 1];
+                        nums[j + 1] = temp;
+                    }
                 }
 
-            System.out.printf("최소값 인덱스는 %d 입니다.\n", minIndex);
         }
 
         // 값 저장하기
