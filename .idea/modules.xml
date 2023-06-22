@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaPrj/JavaPrj.iml" filepath="$PROJECT_DIR$/JavaPrj/JavaPrj.iml" />
       <module fileurl="file://$PROJECT_DIR$/Newlec.iml" filepath="$PROJECT_DIR$/Newlec.iml" />
-      <module fileurl="file://$PROJECT_DIR$/방과후연습용/방과후연습용.iml" filepath="$PROJECT_DIR$/방과후연습용/방과후연습용.iml" />
+      <module fileurl="file://$PROJECT_DIR$/afterschool/방과후연습용.iml" filepath="$PROJECT_DIR$/afterschool/방과후연습용.iml" />
     </modules>
   </component>
 </project>
