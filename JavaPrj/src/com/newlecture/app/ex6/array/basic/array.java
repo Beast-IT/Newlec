@@ -92,14 +92,13 @@ public class array {
 //            System.out.println();
 //        }
 
-
         //최솟값의 인덱스 찾기
         {
             int minIndex = 0;
 
             //몇번의 반복? size-1
             for (int i = 0; i < size - 1; i++)
-                if (nums[i] > nums[i + 1]) {
+                if (nums[minIndex] > nums[i + 1]) {
                     minIndex = (i + 1);
                 }
 
