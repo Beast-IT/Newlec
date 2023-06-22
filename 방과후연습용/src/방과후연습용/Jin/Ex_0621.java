@@ -41,7 +41,7 @@ public class Ex_0621 {
             System.out.printf("%d ", numbers[i]);
         }
         System.out.println();
-        
+
         //✏️ 크기가 10인 문자형 배열 chars를 선언하세요. 반복문을 이용하여 chars의 index가 3의 배수일 땐 ‘a’를, 5의 배수일때 ‘b’를 할당하여 출력해보세요.
         char[] ch = new char[10];
         for (int i = 0; i < 10; i++) {
@@ -132,6 +132,10 @@ public class Ex_0621 {
                     case 9: {
                         System.out.println("종료");
                         break end;
+                    }
+
+                    default: {
+                        System.out.printf("잘못된 입력입니다. 숫자 1~9만 입력하세요.");
                     }
                 }
             }

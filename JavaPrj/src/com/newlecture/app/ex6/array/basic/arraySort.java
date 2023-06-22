@@ -11,21 +11,21 @@ import java.io.IOException;
  * */
 public class arraySort {
     public static void main(String[] args) throws IOException {
-        int[] nums = {100, 23, 46, 46, 50, 50, 57, 70, 80, 82, 90, 20};// 숫자 저장 공간
+        int[] nums = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};// 숫자 저장 공간
+
         int temp = 0;
-        int index = 0;
+        //몇번의 반복? size-1
 
-        int i = 0, j = 0;
-
-        for (i = 0; i < nums.length; i++) {
-            int min = 100000;
-            for (j = 0; j < nums.length; j++) {
-                if (min > nums[j]) {
-
+        for (int i = 0; i < nums.length; i++)
+            for (int j = 0; j < (nums.length - 1) - i; j++) {
+                if (nums[j] > nums[j + 1]) {
+                    temp = nums[j]; //선생님 변수 선언 방법
+                    nums[j] = nums[j + 1];
+                    nums[j + 1] = temp;
                 }
             }
-        }
-
+        for (int i = 0; i < nums.length; i++)
+            System.out.printf("%d ", nums[i]);
 
     }
 }
