@@ -4,45 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f253ea38-cd27-4a87-9dfa-7a4c52774dd7" name="Changes" comment="배열로 값바꾸기(버블정렬) 수업끝">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/.classpath" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/.project" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/res/data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/res/data2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0616.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0621.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0622_1_array_version.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0622_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0622_3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0622_4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Factorial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/FibonacciSequence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Star.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/String_.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/loop_0614.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/only.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/반복문연습.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/방과후연습용.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="f253ea38-cd27-4a87-9dfa-7a4c52774dd7" name="Changes" comment="0622_오후 과제 중간 저장">
+      <change afterPath="$PROJECT_DIR$/afterschool/res/score.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0622_5_Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/방과후연습용/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/방과후연습용/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/방과후연습용/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/방과후연습용/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/방과후연습용/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/방과후연습용/src/방과후연습용/Jin/Ex1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/방과후연습용/src/방과후연습용/Jin/Ex_0616.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/방과후연습용/src/방과후연습용/Jin/Ex_0621.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/방과후연습용/src/방과후연습용/Jin/Factorial.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/방과후연습용/src/방과후연습용/Jin/FibonacciSequence.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/방과후연습용/src/방과후연습용/Jin/Star.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/방과후연습용/src/방과후연습용/Jin/loop_0614.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/방과후연습용/src/방과후연습용/Jin/only.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/방과후연습용/src/방과후연습용/Jin/반복문연습.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/방과후연습용/방과후연습용.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0622_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0622_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0622_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0622_4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,21 +56,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Font",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Console Font&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="방과후연습용.Jin" />
@@ -129,7 +96,8 @@
       <workItem from="1687392452648" duration="14169000" />
       <workItem from="1687412917968" duration="146000" />
       <workItem from="1687414169058" duration="3895000" />
-      <workItem from="1687418307375" duration="12657000" />
+      <workItem from="1687418307375" duration="13531000" />
+      <workItem from="1687432072896" duration="3446000" />
     </task>
     <task id="LOCAL-00001" summary="수업용 오목판 수정완료">
       <created>1687306322484</created>
@@ -194,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687413045991</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="0622_오후 과제 중간 저장">
+      <created>1687431239105</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687431239106</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +207,8 @@
     <MESSAGE value="배열로 값바꾸기(최솟값 찾기 쌤 버전)" />
     <MESSAGE value="배열로 값바꾸기(버블정렬)" />
     <MESSAGE value="배열로 값바꾸기(버블정렬) 수업끝" />
-    <option name="LAST_COMMIT_MESSAGE" value="배열로 값바꾸기(버블정렬) 수업끝" />
+    <MESSAGE value="0622_오후 과제 중간 저장" />
+    <option name="LAST_COMMIT_MESSAGE" value="0622_오후 과제 중간 저장" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -44,7 +44,7 @@ public class Ex_0622_3 {
         //onmlkjihgfedcba (역순)
         {
             for (int i = 0; i < alphabetLength - 1; i++)//역순 정렬 완료(버블정렬)
-                for (int j = 0; j < alphabetLength - 1; j++) {
+                for (int j = 0; j < (alphabetLength - 1) - i; j++) {
                     if (alphabet[j] < alphabet[j + 1]) {
                         char temp = alphabet[j];
                         alphabet[j] = alphabet[j + 1];
