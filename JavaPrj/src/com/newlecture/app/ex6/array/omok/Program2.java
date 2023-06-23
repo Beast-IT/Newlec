@@ -33,6 +33,10 @@ public class Program2 {
             }
         }
         // ----------------------------------------------------
+        int ox = -1; // 돌
+        int oy = -1; // 돌
+        int xBefore = -1;
+        int yBefore = -1;
 
         QUIT:
         while (true) {
@@ -53,11 +57,6 @@ public class Program2 {
                 //1. 게임시작
                 case 1: {
 
-                    int ox = -1; // 돌
-                    int oy = -1; // 돌
-                    int xBefore = -1;
-                    int yBefore = -1;
-
                     int count = 1;// 홀수일때 흰돌, 짝수일때 검돌
 
                     GAMEOVER:
@@ -71,10 +70,52 @@ public class Program2 {
                                 System.out.println();
                             }
                         }
+                        if (ox != -1 && oy != -1 && !chk[ox][oy]) {
+                            xBefore = ox;
+                            yBefore = oy;
+
+                            if (count % 2 == 1) {
+                                board[ox][oy] = '●';
+                                System.out.println("백돌 차례입니다");
+                            } else {
+                                board[ox][oy] = '○';
+                                System.out.println("흑돌 차례입니다");
+                            }
+
+                            chk[ox][oy] = true;
+
+                            System.out.printf("이전 좌표 : [%2d][%2d]", xBefore, yBefore);
+
+                            System.out.println("\n완료되었습니다.");
+                        } else if (count > 1)
+                            System.out.println("\n둘 수 없는 자리입니다.");
+
+                        do {
+                            System.out.println("그만두기:-1");
+
+                            System.out.println(" x sp y> ");
+
+                            ox = scan.nextInt();
+                            if (ox == -1) {
+                                System.out.println("GAMEOVER~~");
+                                break GAMEOVER;
+                            }
+                            oy = scan.nextInt();
 
 
+                            if (!((1 <= ox && ox <= 11) && (1 <= oy && oy <= 11)))
+                                System.out.println("오목 좌표 범위를(-1 or 1~11)를 벗어났습니다.");
+                            if (chk[ox][oy])
+                                System.out.println("중복값입니다.");
+
+                            count++;
+                            chk[ox][oy] = true;
+
+
+                        } while (!((1 <= ox && ox <= 11) && (1 <= oy && oy <= 11)));
                     }
                 }
+                break;
                 //2. 도움말.
                 case 2: {
                     System.out.println("좌표를 입력하면 게임을 할 수 있다");
