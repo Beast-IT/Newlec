@@ -75,11 +75,14 @@ public class Program2 {
                         do {
                             System.out.println("그만두기:-1");
 
+
                             if (role % 2 == 0) {
 
                                 System.out.println("검은돌 입력 x sp y> ");
 
                                 ox = scan.nextInt();
+
+
                                 if (ox == -1) {
                                     System.out.println("GAMEOVER~~");
                                     break GAMEOVER;
@@ -93,8 +96,8 @@ public class Program2 {
                                     System.out.println("중복값입니다.");
 
                                 board[ox][oy] = '○';
-
                                 role++;
+                                chk[ox][oy] = true;
 
                             } else if (role % 2 != 0) {
                                 System.out.println("흰돌 입력 x sp y> ");
@@ -113,12 +116,10 @@ public class Program2 {
                                     System.out.println("중복값입니다.");
 
                                 board[ox][oy] = '●';
-
                                 role++;
+                                chk[ox][oy] = true;
                             }
-
                         } while (!((1 <= ox && ox <= 10) && (1 <= oy && oy <= 10)));
-                        chk[ox][oy] = true;
 
                     }
                 }
