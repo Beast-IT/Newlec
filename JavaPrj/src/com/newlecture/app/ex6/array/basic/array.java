@@ -45,15 +45,15 @@ public class array {
         }
         System.out.println();
 
-        int index = -1;// index가 0부터 시작하면 배열에서 0값으로 인식할 수 있어서 범위 밖에있는 값 지정.
-        // 위치 찾기
-        {
-            for (int i = 0; i < size; i++)
-                if (nums[i] == 90) {
-                    index = i;
-                    break;//효율을 위해서!
-                }
-        }
+//        int index = -1;// index가 0부터 시작하면 배열에서 0값으로 인식할 수 있어서 범위 밖에있는 값 지정.
+//        // 위치 찾기
+//        {
+//            for (int i = 0; i < size; i++)
+//                if (nums[i] == 90) {
+//                    index = i;
+//                    break;//효율을 위해서!
+//                }
+//        }
 
 //        // 값 바꾸기
 //        {
@@ -106,25 +106,81 @@ public class array {
 //        }
 
         //정렬하기 (버블정렬)
+//        {
+//            //1등 찾기 -> 비교를 위한 반복횟수 size -1
+//            //2등 찾기 -> 비교를 위한 반복횟수 size -2
+//            //3등 찾기 -> 비교를 위한 반복횟수 size -3
+//
+//            //size-1 등까지 찾기 -> 비교를 위한 반복횟수 1
+//            int temp = 0;
+//            //몇번의 반복? size-1
+//
+//            for (int i = 0; i < (size - 1); i++)
+//                for (int j = 0; j < (size - 1) - i; j++) {
+//                    if (nums[j] > nums[j + 1]) {
+//                        temp = nums[j];
+//                        nums[j] = nums[j + 1];
+//                        nums[j + 1] = temp;
+//                    }
+//                }
+//
+//        }
+
+        //선택정렬
         {
-            //1등 찾기 -> 비교를 위한 반복횟수 size -1
-            //2등 찾기 -> 비교를 위한 반복횟수 size -2
-            //3등 찾기 -> 비교를 위한 반복횟수 size -3
+//            {//1단계
+//                int j = 0;//시작 인덱스
+//                int minIndex = 0;
+//                for (int i = 0; i < size - 1 - j; i++)
+//                    if (nums[minIndex] > nums[i + 1])
+//                        minIndex = i + 1;
+//
+//
+//                int temp = nums[j];
+//                nums[j] = nums[minIndex];
+//                nums[minIndex] = temp;
+//
+//                //콘솔 출력
+//                for (int i = 0; i < size; i++)
+//                    System.out.printf("%3d ", nums[i]);
+//
+//                System.out.printf("\nmin index : %d\n", minIndex);
+//            }
+//            {//2단계
+//                int j = 1;// 현재위치
+//                int minIndex = 1;
+//
+//                for (int i = 0; i < size - 1 - j; i++)
+//                    if (nums[minIndex] > nums[i + 2])
+//                        minIndex = i + 2;
+//
+//
+//                int temp = nums[j];
+//                nums[j] = nums[minIndex];
+//                nums[minIndex] = temp;
+//
+//                //콘솔 출력
+//                for (int i = 0; i < size; i++)
+//                    System.out.printf("%3d ", nums[i]);
+//                System.out.println();
+//            }
 
-            //size-1 등까지 찾기 -> 비교를 위한 반복횟수 1
-            int temp = 0;
-            //몇번의 반복? size-1
-
-            for (int i = 0; i < (size - 1); i++)
-                for (int j = 0; j < (size - 1) - i; j++) {
-                    if (nums[j] > nums[j + 1]) {
-                        temp = nums[j];
-                        nums[j] = nums[j + 1];
-                        nums[j + 1] = temp;
+            {//완성본 (선택정렬)
+                for (int j = 0; j < size - 1; j++) {
+                    int minIndex = j;//배열의 인덱스 0부터 증가하기 때문에 j는 minIndex이다.(앞에서 작은값을 순차적으로 저장해서)
+                    for (int i = 0; i < (size - 1) - j; i++) {
+                        if (nums[minIndex] > nums[i + (1 + j)])
+                            minIndex = i + (1 + j);
                     }
+                    //j <-> minIndex
+                    int temp = nums[j];
+                    nums[j] = nums[minIndex];
+                    nums[minIndex] = temp;
                 }
 
+            }
         }
+
 
         // 값 저장하기
         {
