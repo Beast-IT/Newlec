@@ -177,7 +177,6 @@ public class array {
                     nums[j] = nums[minIndex];
                     nums[minIndex] = temp;
                 }
-
             }
         }
 
