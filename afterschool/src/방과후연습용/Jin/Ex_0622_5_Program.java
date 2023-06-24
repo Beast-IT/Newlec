@@ -45,12 +45,35 @@ public class Ex_0622_5_Program {
                     System.out.println("└───────────────────────────┘");
                     System.out.println();
 
-                    System.out.print("국어 성적을 입력하세요 : ");
-                    kor = scan.nextInt();
-                    System.out.print("수학 성적을 입력하세요 : ");
-                    math = scan.nextInt();
-                    System.out.print("영어 성적을 입력하세요 : ");
-                    eng = scan.nextInt();
+                    //국어 성적입력 & 성적 범위 설정
+                    do {
+                        System.out.print("국어 성적을 입력하세요 : ");
+                        kor = scan.nextInt();
+
+                        if (kor < 0 || 100 < kor)
+                            System.out.println("성적범위(0~100)를 벗어났습니다.");
+
+                    } while (kor < 0 || 100 < kor);
+
+                    //수학 성적입력 & 성적 범위 설정
+                    do {
+                        System.out.print("수학 성적을 입력하세요 : ");
+                        math = scan.nextInt();
+
+                        if (math < 0 || 100 < math)
+                            System.out.println("성적범위(0~100)를 벗어났습니다.");
+
+                    } while (math < 0 || 100 < math);
+
+                    //영어 성적입력 & 성적 범위 설정
+                    do {
+                        System.out.print("영어 성적을 입력하세요 : ");
+                        eng = scan.nextInt();
+
+                        if (eng < 0 || 100 < eng)
+                            System.out.println("성적범위(0~100)를 벗어났습니다.");
+
+                    } while (eng < 0 || 100 < eng);
 
 
                     break;
@@ -137,12 +160,12 @@ public class Ex_0622_5_Program {
                 }
                 default: {
                     System.out.println("┌───────────────────────────┐");
-                    System.out.println("    화면에 표시된 값만 입력하세요   ");
+                    System.out.println("   화면에 표시된 값만 입력하세요   ");
                     System.out.println("└───────────────────────────┘");
                     break;
                 }
             }
-            
+
         }
 
     }

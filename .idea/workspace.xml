@@ -7,6 +7,7 @@
     <list default="true" id="f253ea38-cd27-4a87-9dfa-7a4c52774dd7" name="Changes" comment="0622_오후 과제 완료">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex6/array/lotto/LottoProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex6/array/lotto/LottoProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0622_5_Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0622_5_Program.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +103,7 @@
       <workItem from="1687486260494" duration="18000" />
       <workItem from="1687486348208" duration="8117000" />
       <workItem from="1687498434474" duration="12133000" />
+      <workItem from="1687569136542" duration="1720000" />
     </task>
     <task id="LOCAL-00001" summary="수업용 오목판 수정완료">
       <created>1687306322484</created>
@@ -221,17 +223,6 @@
     <MESSAGE value="0622_오후 과제 중간 저장" />
     <MESSAGE value="0622_오후 과제 완료" />
     <option name="LAST_COMMIT_MESSAGE" value="0622_오후 과제 완료" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex6/array/lotto/LottoProgram.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
