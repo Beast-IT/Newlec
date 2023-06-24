@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -8,12 +9,18 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex6/array/lotto/LottoProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex6/array/lotto/LottoProgram.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0622_5_Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0622_5_Program.java" afterDir="false" />
+=======
+  <component name="ChangeListManager">
+    <list default="true" id="b8de2b63-72ea-4218-a139-302133b2df2c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex6/control/loop/OmokProgram2.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex6/control/loop/OmokProgram2.java" afterDir="false" />
+>>>>>>> origin/omok_1
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -50,12 +57,22 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2RSUN2IpbvCbvBfFhYXmAwbzV6J" />
+>>>>>>> origin/omok_1
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+<<<<<<< HEAD
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -183,11 +200,31 @@
       <updated>1687449279044</updated>
     </task>
     <option name="localTasksCounter" value="12" />
+=======
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jinseunghyun/Desktop/JavaWork/Newlec&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b8de2b63-72ea-4218-a139-302133b2df2c" name="Changes" comment="" />
+      <created>1687242932982</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687242932982</updated>
+      <workItem from="1687242934313" duration="49000" />
+      <workItem from="1687243330622" duration="49000" />
+    </task>
+>>>>>>> origin/omok_1
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ID_ORDER">
       <list>
@@ -233,4 +270,6 @@
       <FILTER>com.newlecture.app.ex6.array.basic.*</FILTER>
     </SUITE>
   </component>
+=======
+>>>>>>> origin/omok_1
 </project>
