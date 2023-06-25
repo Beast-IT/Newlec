@@ -6,7 +6,7 @@ public class OmokProgram {
 
     public static void main(String[] args) {
 
-<<<<<<< HEAD
+
         QUIT:
         while (true) {
 
@@ -118,8 +118,8 @@ public class OmokProgram {
                 }
             }
         }
-    }// end main
-=======
+
+
         String[][] stack = new String[12][12];
         boolean[][] duplicate = new boolean[12][12];
 
@@ -209,7 +209,6 @@ public class OmokProgram {
         }
 
         System.out.println("종료되었습니다.");
-
+    }// end main
     }
->>>>>>> origin/omok_1
-}
+

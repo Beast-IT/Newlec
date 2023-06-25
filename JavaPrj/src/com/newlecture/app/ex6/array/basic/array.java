@@ -128,7 +128,8 @@ public class array {
 
         //선택정렬
         {
-//            {//1단계
+            //1단계
+//            {
 //                int j = 0;//시작 인덱스
 //                int minIndex = 0;
 //                for (int i = 0; i < size - 1 - j; i++)
@@ -146,7 +147,8 @@ public class array {
 //
 //                System.out.printf("\nmin index : %d\n", minIndex);
 //            }
-//            {//2단계
+            //2단계
+//            {
 //                int j = 1;// 현재위치
 //                int minIndex = 1;
 //
