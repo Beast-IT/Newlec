@@ -2,10 +2,18 @@ package com.newlecture.app.ex6.array.omok;
 
 public class Program {
     public static void main(String[] args) {
+        char[][] board = new char[12][12];
+
         int[] oxes = new int[10];
         int[] oxys = new int[10];
 
-        char[][] board = new char[12][12];
+        int width;
+        int height;
+        int turn=1;
+
+        char BLACK_STONE = '○';
+        char WHITE_STONE = '●';
+
 
         //'┼' 값 저장
         {
@@ -15,7 +23,8 @@ public class Program {
 
             int ox = 3;
             int oy = 5;
-            board[oy][ox] = '○';
+
+            board[oy][ox] = turn==BLACK_STONE? '○':'●';
 
 
         }

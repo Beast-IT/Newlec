@@ -2,7 +2,7 @@ package com.newlecture.app.ex6.array.omok;
 
 import java.util.Scanner;
 
-public class Program2 {
+public class Program3_SaveLoad {
     public static void main(String[] args) {
         QUIT:
         while (true) {

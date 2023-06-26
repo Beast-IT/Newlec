@@ -6,10 +6,7 @@ public class LottoProgram {
     public static void main(String[] args) {
 
         int[] lotto = new int[6];
-
-
         Random rand = new Random();//Random(45)는 0~44까지의 범위를 만든다.
-
 
         // 1. lottol 배열을 랜덤한 값들로 채우고
         {
@@ -17,6 +14,7 @@ public class LottoProgram {
 //                    lotto[i] = rand.nextInt(45) + 1;
         }
         //추가문제(개인 연습) 중복제거
+        //
         {
             for (int i = 0; i < lotto.length; i++) {
                 lotto[i] = rand.nextInt(45) + 1;//Random(45)는 0~44까지의 범위를 만든다. 그래서 +1
@@ -27,11 +25,11 @@ public class LottoProgram {
             }
         }
 
-        // 2. 정렬을 한 후에
+        // 2. 정렬을 한 후에 (선택정렬)
         {
             for (int i = 0; i < lotto.length - 1; i++) {
                 int minIndex = i;
-                for (int j = 0; j < lotto.length - 1 - i; j++) {
+                for (int j = 0; j < (lotto.length - 1) - i; j++) {
                     if (lotto[minIndex] > lotto[j + 1 + i])
                         minIndex = i + j + 1;
                 }
