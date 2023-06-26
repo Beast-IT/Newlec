@@ -4,44 +4,48 @@ import java.util.Scanner;
 
 public class Program2 {
     public static void main(String[] args) {
-        char board[][] = new char[12][12];// 12*12 바둑판 배열
-        boolean chk[][] = new boolean[12][12];//중복값 판별용 배열
 
-        // ----------------------------------------------------초기 바둑판 양식 배열에 저장
-        for (int x = 0; x < 12; x++) {
-            for (int y = 0; y < 12; y++) {
-                if (x == 0 && y == 0)// 왼쪽 위 모서리막기
-                    board[x][y] = '┌';
-                else if (x == 11 && y == 11)// 오른쪽 아래 모서리막기
-                    board[x][y] = '┘';
-                else if (x == 11 && y == 0)// 왼쪽 아래 모서리막기
-                    board[x][y] = '└';
-                else if (x == 0 && y == 11)// 오른쪽 위 모서리막기
-                    board[x][y] = '┐';
-                else if (x == 0)// 위에 막기
-                    board[x][y] = '┬';
-                else if (x == 11)// 아래 막기
-                    board[x][y] = '┴';
-                else if (y == 0)// 왼쪽 막기
-                    board[x][y] = '├';
-                else if (y == 11)// 오른쪽 막기
-                    board[x][y] = '┤';
-                else
-                    board[x][y] = '┼';
-
-                chk[x][y] = false;
-            }
-        }
-        // ----------------------------------------------------
-        int ox = -1; // 돌
-        int oy = -1; // 돌
-
-        //이전좌표
-        int xBefore = -1;
-        int yBefore = -1;
 
         QUIT:
         while (true) {
+
+            char board[][] = new char[12][12];// 12*12 바둑판 배열
+            boolean chk[][] = new boolean[12][12];//중복값 판별용 배열
+
+            // ----------------------------------------------------
+            int ox = -1; // 돌
+            int oy = -1; // 돌
+
+            //이전좌표
+            int xBefore = -1;
+            int yBefore = -1;
+
+            // ----------------------------------------------------초기 바둑판 양식 배열에 저장
+            for (int x = 0; x < 12; x++) {
+                for (int y = 0; y < 12; y++) {
+                    if (x == 0 && y == 0)// 왼쪽 위 모서리막기
+                        board[x][y] = '┌';
+                    else if (x == 11 && y == 11)// 오른쪽 아래 모서리막기
+                        board[x][y] = '┘';
+                    else if (x == 11 && y == 0)// 왼쪽 아래 모서리막기
+                        board[x][y] = '└';
+                    else if (x == 0 && y == 11)// 오른쪽 위 모서리막기
+                        board[x][y] = '┐';
+                    else if (x == 0)// 위에 막기
+                        board[x][y] = '┬';
+                    else if (x == 11)// 아래 막기
+                        board[x][y] = '┴';
+                    else if (y == 0)// 왼쪽 막기
+                        board[x][y] = '├';
+                    else if (y == 11)// 오른쪽 막기
+                        board[x][y] = '┤';
+                    else
+                        board[x][y] = '┼';
+
+//                chk[x][y] = false;
+                }
+            }
+
             Scanner scan = new Scanner(System.in);
 
             System.out.println("┌───────────────────────────┐");
@@ -58,7 +62,6 @@ public class Program2 {
             switch (option) {
                 //1. 게임시작
                 case 1: {
-
                     int count = 1;// 홀수일때 흰돌, 짝수일때 검돌
 
                     GAMEOVER:
