@@ -14,6 +14,8 @@ public class Program3_SaveLoad {
         boolean[][] saveChk=new boolean[12][12];//중복값 저장 변수
         char[][] saveBoard=new char[12][12];//보드값 저장
 
+        boolean loadswitch = false;
+
         //countBefore
         int countBefore=1;
 
@@ -122,7 +124,7 @@ public class Program3_SaveLoad {
 
 
             //저장값 불러오기
-            if(countBefore>1){
+            if(loadswitch){
                         for(int i=0;i<12;i++)
                             for(int j=0;j<12;j++) {
                                 if(save[i][j]==1) {
@@ -169,6 +171,7 @@ public class Program3_SaveLoad {
                             saveChk[ox][oy]=true;
                             count++;
                             countBefore=count;
+                            loadswitch=false;
 
                             System.out.printf("☆이전 좌표 : [%2d][%2d]☆\n", xBefore, yBefore);
                         } else if (countBefore>1 && count>1)
@@ -275,6 +278,7 @@ public class Program3_SaveLoad {
                     sc.close();
                     fis.close();
 
+                    loadswitch=true;
                     break;
                 }
                 //5. 종료
