@@ -128,15 +128,17 @@ public class Program3_SaveLoad {
                                 if(save[i][j]==1) {
                                     chk[i][j] = saveChk[i][j];//중복값 T & F
                                     saveBoard[i][j] = '○';;//바둑판정보
+                                    board[i][j]=saveBoard[i][j];
                                 }
 
                                 if(save[i][j]==2) {
                                     chk[i][j] = saveChk[i][j];//중복값 T & F
                                     saveBoard[i][j] = '●';;//바둑판정보
+                                    board[i][j]=saveBoard[i][j];
                                 }
                             }
-                        countBefore=0;
                     }
+
 
             switch (option) {
                 //1. 게임시작
@@ -154,12 +156,12 @@ public class Program3_SaveLoad {
 
                             if (count % 2 == 1) {
                                 board[ox][oy] = '○';
-                                saveBoard[ox][oy]='○';
+//                                saveBoard[ox][oy]='○';
                                 save[ox][oy]=blackStone;
                             }
                             else if (count % 2 == 0) {
                                 board[ox][oy] = '●';
-                                saveBoard[ox][oy]='●';
+//                                saveBoard[ox][oy]='●';
                                 save[ox][oy]=whiteStone;
                             }
 
