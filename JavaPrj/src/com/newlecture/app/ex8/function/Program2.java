@@ -29,7 +29,7 @@ public class Program2 {
 
         printLottos(lottos);
 
-        System.out.println("-----------첫번째와 세번째 바꾸기-----------");
+        System.out.println("\n-----------첫번째와 세번째 바꾸기-----------\n");
 
         swapLottos(lottos,0,2);//값바꾸기
 

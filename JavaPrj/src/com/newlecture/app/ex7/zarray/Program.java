@@ -12,11 +12,21 @@ public class Program {
 
             System.out.println();
         }
+        System.out.println(System.identityHashCode(lottos[0]));
+        System.out.println(System.identityHashCode(lottos[1]));
+        System.out.println(System.identityHashCode(lottos[2]));
+
         System.out.println("------ 0<->2 위치 변경 --------");
 
         int[] temp = lottos[0];
+        System.out.println(System.identityHashCode(temp[0]));
         lottos[0]=lottos[2];
         lottos[2]=temp;
+
+        System.out.println(System.identityHashCode(lottos[0]));
+        System.out.println(System.identityHashCode(lottos[1]));
+        System.out.println(System.identityHashCode(lottos[2]));
+
         /*
         [1] <-> [2]
 
