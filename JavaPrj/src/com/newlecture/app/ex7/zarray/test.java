@@ -25,12 +25,6 @@ public class test {
                 System.out.print(lottos[i][j]);
             System.out.println();
         }
-        System.out.println();
-        for (int i = 0; i < lottos.length; i++) {
-            for (int j = 0; j < lottos.length; j++)
-                System.out.println(System.identityHashCode(lottos[i][j]));
-            System.out.println();
-        }
     }
 
 }
