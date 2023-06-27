@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e70a445e-e440-414e-91f7-66a2547bc808" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaPrj/res/Data/Omok_save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/res/Data/Omok_save.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex6/array/omok/Program3_SaveLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex6/array/omok/Program3_SaveLoad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex7/zarray/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex7/zarray/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex8/function/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex8/function/Program.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +44,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.newlecture.app.ex8.function" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,7 +61,7 @@
       <workItem from="1687738274804" duration="6927000" />
       <workItem from="1687745611157" duration="29377000" />
       <workItem from="1687787708843" duration="2756000" />
-      <workItem from="1687823509906" duration="5695000" />
+      <workItem from="1687823509906" duration="7376000" />
     </task>
     <servers />
   </component>
