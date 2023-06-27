@@ -8,15 +8,31 @@ public class Program2 {
         return lottos;
     }
 
+    public static void printLottos(int[][] lottos){
+        for(int i=0;i<3;i++) {
+            for (int j = 0; j < 6; j++)
+                System.out.printf("%4d, ",lottos[i][j]);
+
+            System.out.println();
+        }
+    }
+
+    public static void swapLottos(int[][] lottos,int i,int j){
+        int[] temp = lottos[0];
+        lottos[0]=lottos[2];
+        lottos[2]=temp;
+    }
+
     public static void main(String[] args) {
 
-        int[][] a = creatLottos();
+        int[][] lottos = creatLottos();
 
-        //printLottos;
+        printLottos(lottos);
 
-        //swapLottos;
+        System.out.println("-----------첫번째와 세번째 바꾸기-----------");
+        swapLottos(lottos,0,2);//값바꾸기
 
-        //printLottos
+        printLottos(lottos);
 
 
     }
