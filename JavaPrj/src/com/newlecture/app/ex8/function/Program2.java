@@ -18,9 +18,9 @@ public class Program2 {
     }
 
     public static void swapLottos(int[][] lottos,int i,int j){
-        int[] temp = lottos[0];
-        lottos[0]=lottos[2];
-        lottos[2]=temp;
+        int[] temp = lottos[i];
+        lottos[i]=lottos[j];
+        lottos[j]=temp;
     }
 
     public static void main(String[] args) {
@@ -30,6 +30,7 @@ public class Program2 {
         printLottos(lottos);
 
         System.out.println("-----------첫번째와 세번째 바꾸기-----------");
+
         swapLottos(lottos,0,2);//값바꾸기
 
         printLottos(lottos);
