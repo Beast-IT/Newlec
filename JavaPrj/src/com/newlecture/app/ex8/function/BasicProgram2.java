@@ -6,8 +6,7 @@ public class BasicProgram2 {
         return total;
     }
     static int power(int x){
-        int total =((x+3)*(x+3)+ x/3*(x-2)+5);
-        return total;
+        return ((x+3)*(x+3)+ x/3*(x-2)+5);
     }
     public static void main(String[] args) {
         //int result = 1+2+3+4+5+6+7+8+9+10~n;
