@@ -69,7 +69,7 @@ public class EX_0628_Program {
                     //로또 출력
                     {
                         for (int j = 0; j < 6; j++)
-                            System.out.printf("(%d) ", lottos[0][j]);
+                            System.out.printf("(%d) ", lottos[auto][j]);
                     }
                     System.out.println();
 

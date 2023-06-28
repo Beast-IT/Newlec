@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e70a445e-e440-414e-91f7-66a2547bc808" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/EX_0628_Program_Structured.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaPrj/res/Lottos_save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/res/Lottos_save.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaPrj/res/ALottos_save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/res/ALottos_save.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaPrj/res/Lottos_save.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaPrj/res/MLottos_save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/res/MLottos_save.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/EX_0628_Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/EX_0628_Program.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,21 +35,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Font",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="방과후연습용.Jin" />
       <recent name="com.newlecture.app.ex8.function" />
     </key>
   </component>
@@ -134,7 +138,8 @@
       <workItem from="1687912653994" duration="822000" />
       <workItem from="1687918238812" duration="769000" />
       <workItem from="1687919638424" duration="16996000" />
-      <workItem from="1687943130448" duration="12047000" />
+      <workItem from="1687943130448" duration="12314000" />
+      <workItem from="1687962199690" duration="3338000" />
     </task>
     <servers />
   </component>
