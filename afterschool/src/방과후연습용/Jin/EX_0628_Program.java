@@ -1,16 +1,17 @@
 package 방과후연습용.Jin;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.nio.charset.Charset;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.SplittableRandom;
 
 public class EX_0628_Program {
     public static void main(String[] args) throws IOException {
         //lottos[0][] -> 번호 자동생성, lottos[1][] -> 번호 수동생성
+        final int auto = 0;
+        final int manual = 1;
+
         int[][] lottos = new int[2][6];
 
         Scanner scan = new Scanner(System.in);
@@ -44,9 +45,9 @@ public class EX_0628_Program {
                     //랜덤한 값 추출 & 중복제거
                     {
                         for (int i = 0; i < 6; i++) {
-                            lottos[0][i] = rand.nextInt(45) + 1;//Random(45)는 0~44까지의 범위를 만든다. 그래서 +1
+                            lottos[auto][i] = rand.nextInt(45) + 1;//Random(45)는 0~44까지의 범위를 만든다. 그래서 +1
                             for (int j = 0; j < i; j++) {
-                                if (lottos[0][i] == lottos[0][j])
+                                if (lottos[auto][i] == lottos[auto][j])
                                     i--;
                             }
                         }
@@ -57,25 +58,23 @@ public class EX_0628_Program {
                         for (int i = 0; i < 6 - 1; i++) {
                             int minIndex = i;
                             for (int j = 0; j < (6 - 1) - i; j++) {
-                                if (lottos[0][minIndex] > lottos[0][j + 1 + i])
+                                if (lottos[auto][minIndex] > lottos[auto][j + 1 + i])
                                     minIndex = i + j + 1;
                             }
-                            int temp = lottos[0][i];
-                            lottos[0][i] = lottos[0][minIndex];
-                            lottos[0][minIndex] = temp;
+                            int temp = lottos[auto][i];
+                            lottos[auto][i] = lottos[auto][minIndex];
+                            lottos[auto][minIndex] = temp;
                         }
                     }
-                    System.out.println();
                     //로또 출력
                     {
                         for (int j = 0; j < 6; j++)
-                            System.out.printf("%d, ", lottos[0][j]);
+                            System.out.printf("(%d) ", lottos[0][j]);
                     }
-                    System.out.print("\b\b");//이스케이프 문자 지우기.
                     System.out.println();
 
 
-                    System.out.println("1. 저장하고 메인메뉴로 가기");
+                    System.out.println("\n1. 저장하고 메인메뉴로 가기");
                     System.out.println("2. 취소하고 메인메뉴로 가기");
                     System.out.print(">_ ");
 
@@ -83,17 +82,18 @@ public class EX_0628_Program {
 
                     switch (meun2) {
                         case 1: {
-                            System.out.println("저장했습니다.");
-                            FileOutputStream fos = new FileOutputStream("JavaPrj/res/Lottos_save.txt");
+                            System.out.print("\n저장했습니다.");
+                            FileOutputStream fos = new FileOutputStream("JavaPrj/res/ALottos_save.txt");
                             PrintWriter fout = new PrintWriter(fos, true, Charset.forName("UTF-8"));
 
                             for (int i = 0; i < 6; i++)
-                                fout.printf("%d ", lottos[0][i]);
+                                fout.printf("%d ", lottos[auto][i]);
 
                             fout.println();
 
                             fout.close();
                             fos.close();
+                            System.out.println();
                             break;
                         }
                         case 2: {
@@ -109,21 +109,105 @@ public class EX_0628_Program {
                     System.out.println("     Lotto 번호 수동 생성     ");
                     System.out.println("└───────────────────────────┘");
 
-                    System.out.print("입력 _>");
-                    String input = new String();
-                    input = scan.next();
+                    Scanner scan1 = new Scanner(System.in);
+
+                    boolean onOff = true;
+
+                    AGAIN:
+                    do {
+                        //사용자의 입력값을 한줄로 받아옴.
+                        System.out.println("    1 ~ 45 숫자를 입력하세요  ");
+                        System.out.println("    예) 1 2 23 24 28 45     ");
+                        System.out.print("입력 > ");
+
+                        //문자열로 한번에 받아옴.
+                        String input = scan1.nextLine();
+                        String[] arr = input.split(" ");
+
+                        //문자열로 받아온 숫자를 정수로 변환해줌.
+                        for (int i = 0; i < 6; i++)
+                            lottos[manual][i] = Integer.valueOf(arr[i]);
+
+                        //입력범위 설정
+                        for (int j = 0; j < 6; j++)
+                            if ((lottos[manual][j] < 1 || 45 < lottos[manual][j])) {
+                                System.out.println("\n   1~ 45 범위의 숫자를 입력하세요.");
+                                continue AGAIN;
+                            }
 
 
-//                    break;
+                        //중복제거
+                        {
+                            for (int i = 0; i < 6; i++) {
+                                for (int j = 0; j < i; j++) {
+                                    if (lottos[manual][i] == lottos[manual][j]) { // 중복 검사
+                                        System.out.println("\n     중복된 요소가 있습니다! ");
+                                        continue AGAIN;
+                                    }
+                                }
+                            }
+                            //i 0 |  1 |  2  |   3   |    4    |     5
+                            //j - |  0 | 0 1 | 0 1 2 | 0 1 2 3 | 0 1 2 3 4
+                        }
+                        System.out.println("\n1. 저장하고 메인메뉴로 가기");
+                        System.out.println("2. 취소하고 메인메뉴로 가기");
+                        System.out.print(">_ ");
+
+                        int meun2 = scan.nextInt();
+
+                        switch (meun2) {
+                            case 1: {
+                                System.out.print("\n저장했습니다.");
+                                FileOutputStream fos = new FileOutputStream("JavaPrj/res/MLottos_save.txt");
+                                PrintWriter fout = new PrintWriter(fos, true, Charset.forName("UTF-8"));
+
+                                for (int i = 0; i < 6; i++)
+                                    fout.printf("%d ", lottos[manual][i]);
+                                fout.println();
+
+                                fout.close();
+                                fos.close();
+                                System.out.println();
+                                break;
+                            }
+                            case 2: {
+                                System.out.println("저장하지 않고 메인 메뉴로 돌아갑니다.");
+                                break;
+                            }
+                        }
+                        onOff = false;
+                    } while (onOff);
+
+                    break;
 
                 }
                 case 3: {
+                    FileInputStream fis = new FileInputStream("JavaPrj/res/ALottos_save.txt");
+                    FileInputStream fis1 = new FileInputStream("JavaPrj/res/MLottos_save.txt");
+                    Scanner sc = new Scanner(fis);
+                    Scanner sc1 = new Scanner(fis1);
 
+                    System.out.println("┌───────────────────────────┐");
+                    System.out.println("      로또를 불러옵니다...      ");
+                    System.out.println("└───────────────────────────┘");
+                    System.out.println();
+
+                    String autoLotto = sc.nextLine();
+                    String manualLotto = sc1.nextLine();
+
+                    sc1.close();
+                    sc.close();
+                    fis1.close();
+                    fis.close();
+
+                    System.out.printf("자동 로또번호 %s\n", autoLotto);
+                    System.out.printf("수동 로또번호 %s\n", manualLotto);
+
+                    break;
                 }
                 case 4: {
                     System.out.println("종료");
                     break QUIT;
-
                 }
                 default:
                     System.out.println("1~4값만 입력하세요.");
