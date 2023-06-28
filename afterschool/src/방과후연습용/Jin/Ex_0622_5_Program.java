@@ -24,7 +24,7 @@ public class Ex_0622_5_Program {
         while (true) {
 
             System.out.println("┌───────────────────────────┐");
-            System.out.println("           메인 메뉴            ");
+            System.out.println("           메인 메뉴          ");
             System.out.println("└───────────────────────────┘");
             System.out.println();
 

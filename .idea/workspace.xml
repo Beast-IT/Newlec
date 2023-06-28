@@ -7,7 +7,7 @@
     <list default="true" id="e70a445e-e440-414e-91f7-66a2547bc808" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex8/function/CallByRefProgram2.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex8/function/CallByRefProgram2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex8/function/StaticProgram2.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex8/function/StaticProgram2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0622_5_Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0622_5_Program.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +133,8 @@
       <workItem from="1687912497149" duration="35000" />
       <workItem from="1687912653994" duration="822000" />
       <workItem from="1687918238812" duration="769000" />
-      <workItem from="1687919638424" duration="2062000" />
+      <workItem from="1687919638424" duration="16996000" />
+      <workItem from="1687943130448" duration="327000" />
     </task>
     <servers />
   </component>
@@ -150,6 +151,13 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="scan" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
