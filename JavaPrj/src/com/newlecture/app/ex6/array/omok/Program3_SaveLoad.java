@@ -209,13 +209,14 @@ public class Program3_SaveLoad {
                         }
                         fout.printf("%d ", countBefore);//이전 플레이 기록
                     }
+                    fout.close();
+                    fos.close();
+
                     System.out.println("┌───────────────────────────┐");
                     System.out.println("      게임을 저장 했습니다.    ");
                     System.out.println("└───────────────────────────┘");
                     System.out.println();
 
-                    fout.close();
-                    fos.close();
                     break;
                 }
                 //4. 불러오기
@@ -232,14 +233,15 @@ public class Program3_SaveLoad {
                         }
                         countBefore=sc.nextInt();
                     }
+                    sc.close();
+                    fis.close();
+                    
                     System.out.println("┌───────────────────────────┐");
                     System.out.println("      게임을 불러왔습니다.     ");
                     System.out.println("└───────────────────────────┘");
                     System.out.println();
 
                     loadswitch=true;
-                    sc.close();
-                    fis.close();
                     break;
                 }
                 //5. 종료

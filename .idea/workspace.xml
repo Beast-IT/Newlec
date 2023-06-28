@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e70a445e-e440-414e-91f7-66a2547bc808" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaPrj/res/Data/Omok_save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/res/Data/Omok_save.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex7/zarray/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex7/zarray/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex6/array/omok/Program3_SaveLoad.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex6/array/omok/Program3_SaveLoad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex8/function/Program2.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex8/function/Program2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +41,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -127,7 +126,13 @@
       <workItem from="1687787708843" duration="2756000" />
       <workItem from="1687823509906" duration="15471000" />
       <workItem from="1687842640505" duration="2115000" />
-      <workItem from="1687850583641" duration="1074000" />
+      <workItem from="1687850583641" duration="2359000" />
+      <workItem from="1687859184560" duration="694000" />
+      <workItem from="1687865993433" duration="1487000" />
+      <workItem from="1687910344175" duration="1522000" />
+      <workItem from="1687912497149" duration="35000" />
+      <workItem from="1687912653994" duration="822000" />
+      <workItem from="1687918238812" duration="769000" />
     </task>
     <servers />
   </component>
