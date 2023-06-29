@@ -41,15 +41,6 @@ public class Ex_0629_02 {
         //
         //    System.out.println(“map 데이터 로드 완료”);
         //}
-        //map 확인용
-        {
-            for (int i = 0; i < map.length; i++) {
-                for (int j = 0; j < map[i].length; j++){
-                    System.out.print(map[i][j]);
-                }
-                System.out.println();
-            }
-        }
 
 
 
@@ -76,27 +67,50 @@ public class Ex_0629_02 {
         //
         //    System.out.println(“board 그리기 완료”);
         //}
+
+        //보드 출력
         {
             for (int i = 0; i < 6; i++) {
-                for (int j = 0; j < 10; j++){
-                    System.out.printf("%d%d ",i,j);
+                for (int j = 0; j < 10; j++) {
+                    if ((i % 2 == 0))
+                        if (j % 2 == 0)
+                            board[i][j] = '┌';
+                        else
+                            board[i][j] = '┐';
+                    else if (j % 2 == 0)
+                        board[i][j] = '└';
+                    else
+                        board[i][j] = '┘';
                 }
                 System.out.println();
             }
         }
+
+        //이상한 네모 입력
         {
-            for (int i = 0; i < 6; i++) {
-                for (int j = 0; j < 10; j++){
-                    if((i%2==0) && (j%2==0)) {
-                        board[i][j] = '┌';
-                        System.out.printf("%c",board[i][j]);
+            for (int i = 0; i < 3; i++)
+                for (int j = 0; j < 5; j++) {
+                    if (map[i][j] == 1) {
+                        int row = i * 2;
+                        int col = j * 2;
+                        board[row][col] = '▩';
+                        board[row][col + 1] = '▩';
+                        board[row + 1][col] = '▩';
+                        board[row + 1][col + 1] = '▩';
                     }
                 }
+        }
+
+        //출력
+        {
+            for (int i = 0; i < 6; i++) {
+                for (int j = 0; j < 10; j++) {
+
+                    System.out.printf("%c", board[i][j]);
+                }
                 System.out.println();
             }
         }
-
-
 
 
         //// 5. board 배열을 화면에 출력하는 코드를 작성하시오.
