@@ -1,4 +1,4 @@
-package 방과후연습용.Jin;
+package 방과후연습용.Jin.Exam;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
