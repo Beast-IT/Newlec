@@ -109,8 +109,6 @@ public class EX_0628_Program {
                     System.out.println("     Lotto 번호 수동 생성     ");
                     System.out.println("└───────────────────────────┘");
 
-                    Scanner scan1 = new Scanner(System.in);
-
                     boolean onOff = true;
 
                     AGAIN:
@@ -120,13 +118,17 @@ public class EX_0628_Program {
                         System.out.println("    예) 1 2 23 24 28 45     ");
                         System.out.print("입력 > ");
 
+                        //개행문자 날려버리기
+                        scan.nextLine();
+//                        scan.skip("[\\r\\n]+");
+
                         //문자열로 한번에 받아옴.
-                        String input = scan1.nextLine();
+                        String input = scan.nextLine();
                         String[] arr = input.split(" ");
 
                         //문자열로 받아온 숫자를 정수로 변환해줌.
                         for (int i = 0; i < 6; i++)
-                            lottos[manual][i] = Integer.valueOf(arr[i]);
+                            lottos[manual][i] = Integer.parseInt(arr[i]);
 
                         //입력범위 설정
                         for (int j = 0; j < 6; j++)

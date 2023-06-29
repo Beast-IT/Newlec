@@ -8,7 +8,7 @@ import java.nio.charset.Charset;
 import java.util.Random;
 import java.util.Scanner;
 
-public class EX_0628_Program_Structured {
+public class EX_0628_Structured_Program {
     public static void main(String[] args) throws IOException {
         //lottos[0][] -> 번호 자동생성, lottos[1][] -> 번호 수동생성
         //상수(constant) final을 이용해서 auto, manual을 구분하였음.
@@ -16,8 +16,6 @@ public class EX_0628_Program_Structured {
         final int manual = 1;
 
         int[][] lottos = new int[2][6];
-
-
 
         QUIT:
         while (true) {
@@ -102,7 +100,7 @@ public class EX_0628_Program_Structured {
 
             //문자열로 받아온 숫자를 정수로 변환해줌.
             for (int i = 0; i < 6; i++)
-                lottos[manual][i] = Integer.valueOf(arr[i]);
+                lottos[manual][i] = Integer.parseInt(arr[i]);
 
             //입력범위 설정
             for (int j = 0; j < 6; j++)

@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e70a445e-e440-414e-91f7-66a2547bc808" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/EX_0628_Program_Structured.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaPrj/res/ALottos_save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/res/ALottos_save.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaPrj/res/Lottos_save.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaPrj/res/MLottos_save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/res/MLottos_save.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaPrj/res/Exam.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaPrj/res/data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/res/data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex8/function/CallByRefProgram2.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex8/function/CallByRefProgram2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/EX_0628_Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/EX_0628_Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/EX_0628_Program_Structured.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/EX_0628_Structured_Program.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,86 +36,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Font",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Console Font&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.newlecture.app.ex9.struct" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspace\Newlec\JavaPrj\res" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.newlecture.app.ex9.struct" />
       <recent name="방과후연습용.Jin" />
       <recent name="com.newlecture.app.ex8.function" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="BasicProgram2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.newlecture.app.ex8.function.BasicProgram2" />
-      <module name="JavaPrj" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.newlecture.app.ex8.function.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.newlecture.app.ex7.zarray.Program" />
-      <module name="JavaPrj" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.newlecture.app.ex7.zarray.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Program2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.newlecture.app.ex8.function.Program2" />
-      <module name="JavaPrj" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.newlecture.app.ex8.function.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Program3_SaveLoad" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.newlecture.app.ex6.array.omok.Program3_SaveLoad" />
-      <module name="JavaPrj" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.newlecture.app.ex6.array.omok.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.BasicProgram2" />
-        <item itemvalue="Application.Program" />
-        <item itemvalue="Application.Program2" />
-        <item itemvalue="Application.Program3_SaveLoad" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -139,7 +85,8 @@
       <workItem from="1687918238812" duration="769000" />
       <workItem from="1687919638424" duration="16996000" />
       <workItem from="1687943130448" duration="12314000" />
-      <workItem from="1687962199690" duration="3338000" />
+      <workItem from="1687962199690" duration="5018000" />
+      <workItem from="1687996240684" duration="9326000" />
     </task>
     <servers />
   </component>
