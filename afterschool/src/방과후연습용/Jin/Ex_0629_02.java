@@ -76,6 +76,28 @@ public class Ex_0629_02 {
         //
         //    System.out.println(“board 그리기 완료”);
         //}
+        {
+            for (int i = 0; i < 6; i++) {
+                for (int j = 0; j < 10; j++){
+                    System.out.printf("%d%d ",i,j);
+                }
+                System.out.println();
+            }
+        }
+        {
+            for (int i = 0; i < 6; i++) {
+                for (int j = 0; j < 10; j++){
+                    if((i%2==0) && (j%2==0)) {
+                        board[i][j] = '┌';
+                        System.out.printf("%c",board[i][j]);
+                    }
+                }
+                System.out.println();
+            }
+        }
+
+
+
 
         //// 5. board 배열을 화면에 출력하는 코드를 작성하시오.
         //
