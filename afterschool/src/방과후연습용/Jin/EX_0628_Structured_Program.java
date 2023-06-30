@@ -12,7 +12,7 @@ public class EX_0628_Structured_Program {
     public static void main(String[] args) throws IOException {
         //lottos[0][] -> 번호 자동생성, lottos[1][] -> 번호 수동생성
         //상수(constant) final을 이용해서 auto, manual을 구분하였음.
-        final int auto = 0;
+        final int auto = 0;//상수는 대문자로 수정하기
         final int manual = 1;
 
         int[][] lottos = new int[2][6];
@@ -113,7 +113,7 @@ public class EX_0628_Structured_Program {
             for (int j = 0; j < 6; j++)
                 if ((lottos[manual][j] < 1 || 45 < lottos[manual][j])) {
                     System.out.println("┌──────────────────────────────────┐");
-                    System.out.println( " ★ 1~ 45 범위의 숫자를 입력하세요.★     ");
+                    System.out.println( " ★ 1~ 45 범위의 숫자를 입력하세요.★  ");
                     System.out.println("└──────────────────────────────────┘");
                     System.out.println("\n   ");
                     continue AGAIN;
