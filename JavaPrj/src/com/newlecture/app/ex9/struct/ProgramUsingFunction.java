@@ -8,6 +8,8 @@ import java.util.Scanner;
 public class ProgramUsingFunction {
 
     public static void main(String[] args) throws IOException {
+        // 1. ExamList클래스에서 list라는 이름으로 새로운 객체를 만든다.
+        //  ExamList클래서 안에 있는 exams[20], index를 다른 클래서에서 list.exams[i], list.index 형식으로 사용가능
         ExamList list=new ExamList();
 
         //성적로드
@@ -22,9 +24,10 @@ public class ProgramUsingFunction {
 
     private static void examPrint(ExamList list) {
         Exam[] exams= list.exams;
+
         int size = list.index;
 
-        int num=1;
+        int num=1;//성적 등수 확인용 숫자.
 
         for (int i = 0; i < size; i++) {
             Exam exam = exams[i];
@@ -44,8 +47,8 @@ public class ProgramUsingFunction {
     private static void examsort(ExamList list) {
 
             Exam[] exams= list.exams;
-
             int size = list.index;
+
             for (int i = 0; i < size - 1; i++)
                 for (int j = 0; j < size - 1 - i; j++)
                     if (exams[j].avg < exams[j + 1].avg) {
