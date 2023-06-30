@@ -98,6 +98,13 @@ public class EX_0628_Structured_Program {
             String input = scan1.nextLine();
             String[] arr = input.split(" ");
 
+            //입력받은 값이 6개가 아니면 다시
+            if(!(arr.length==6)) {
+                System.out.printf(" ★ %d개의 숫자를 입력하셨습니다. 6개의 숫자를 입력하세요. ★\n",arr.length);
+                continue AGAIN;
+            }
+
+
             //문자열로 받아온 숫자를 정수로 변환해줌.
             for (int i = 0; i < 6; i++)
                 lottos[manual][i] = Integer.parseInt(arr[i]);

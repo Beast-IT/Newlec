@@ -68,7 +68,7 @@ public class Ex_0629_02 {
         //    System.out.println(“board 그리기 완료”);
         //}
 
-        //보드 출력
+        //보드 윤곽 넣기
         {
             for (int i = 0; i < 6; i++) {
                 for (int j = 0; j < 10; j++) {
