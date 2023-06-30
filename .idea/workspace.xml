@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e70a445e-e440-414e-91f7-66a2547bc808" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex9/struct/Exam.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex9/struct/Exam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex9/struct/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex9/struct/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/EX_0628_Structured_Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/EX_0628_Structured_Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0629_02.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0629_02.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,8 +54,8 @@
       <recent name="D:\Workspace\Newlec\JavaPrj\res" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="방과후연습용.Jin" />
       <recent name="com.newlecture.app.ex9.struct" />
+      <recent name="방과후연습용.Jin" />
       <recent name="com.newlecture.app.ex8.function" />
     </key>
   </component>
@@ -83,7 +84,7 @@
       <workItem from="1687943130448" duration="12314000" />
       <workItem from="1687962199690" duration="5018000" />
       <workItem from="1687996240684" duration="38034000" />
-      <workItem from="1688050980905" duration="3258000" />
+      <workItem from="1688050980905" duration="17012000" />
     </task>
     <servers />
   </component>
