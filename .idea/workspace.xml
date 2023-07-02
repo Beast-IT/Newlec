@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e70a445e-e440-414e-91f7-66a2547bc808" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/class연습/Birthday.txt" beforeDir="false" afterPath="$PROJECT_DIR$/afterschool/res/class연습/Birthday.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/class연습/Program.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaPrj/res/ALottos_save.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/res/ALottos_save.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0629_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0629_01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +54,8 @@
       <recent name="D:\Workspace\Newlec\JavaPrj\res" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.newlecture.app.ex9.struct" />
       <recent name="방과후연습용.Jin" />
+      <recent name="com.newlecture.app.ex9.struct" />
       <recent name="com.newlecture.app.ex8.function" />
     </key>
   </component>
@@ -85,7 +85,8 @@
       <workItem from="1687962199690" duration="5018000" />
       <workItem from="1687996240684" duration="38034000" />
       <workItem from="1688050980905" duration="44964000" />
-      <workItem from="1688284097639" duration="3100000" />
+      <workItem from="1688284097639" duration="3221000" />
+      <workItem from="1688303714695" duration="5193000" />
     </task>
     <servers />
   </component>
@@ -104,6 +105,15 @@
     </option>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex_0629_01.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="scan" />

@@ -23,10 +23,12 @@ import java.util.Scanner;
         //10000000000000000000
 public class Ex_0629_01 {
     public static void main(String[] args) throws IOException {
+
         //2. bitmap이라는 이름으로 20X10크기의 정수를 담을 수 있는 이차원 배열을 생성하시오.
         // [           ]  bitmap = [                                      ];
         int[][] bitmap = new int[10][20];
 
+        //파일 읽어오기 & 읽어온 파일 btimap 배열에 하나씩 담기.
         {
             FileInputStream fis = new FileInputStream("afterschool/res/bitmap.txt");
             Scanner fscan = new Scanner(fis);
@@ -54,12 +56,17 @@ public class Ex_0629_01 {
         //00000000000000000111
         //00000000000000000011
         //00000000000000000001
+
+            //값 바꾸기 정렬
+            //bitmap.length "10", bitmap.length[i][] "20"
             for (int i = 0; i < bitmap.length; i++)
                 for (int j = 0; j < bitmap[i].length/2; j++) {
                     int temp = bitmap[i][(bitmap[i].length-1) - j];
                     bitmap[i][(bitmap[i].length-1) - j] = bitmap[i][j];
                     bitmap[i][j] = temp;
                 }
+            //i 0        |  1        |        2 |        3 | ....
+            //j 0 <-> 19 |  1 <-> 18 | 2 <-> 17 | 3 <-> 16 | ....
         }
 
         System.out.println("자리변경 완료");
