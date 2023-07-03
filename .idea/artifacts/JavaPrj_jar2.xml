@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JavaPrj:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaPrj_jar2</output-path>
+    <root id="archive" name="JavaPrj.jar">
+      <element id="file-copy" path="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex10/reuse/ExamList.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex10/reuse/Exam.java" />
+    </root>
+  </artifact>
+</component>

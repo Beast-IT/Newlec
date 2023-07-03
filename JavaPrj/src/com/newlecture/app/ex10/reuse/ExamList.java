@@ -1,67 +1,27 @@
-package com.newlecture.app.ex9.struct;
+package com.newlecture.app.ex10.reuse;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class ProgramUsingFunction {
+public class ExamList {
+    Exam[] exams=new Exam[20];
+    int index;
 
-    public static void main(String[] args) throws IOException {
-        // 1. ExamList클래스에서 list라는 이름으로 새로운 객체를 만든다.
-        //  ExamList클래서 안에 있는 exams[20], index를 다른 클래서에서 list.exams[i], list.index 형식으로 사용가능
-        ExamList list = new ExamList();
-
-        //성적로드
-        examLoad(list);
-
-        //성적 정렬
-        examsort(list);
-
-        //성적 출력
-        examPrint(list);
-        System.out.println();
-        examPrint(list, 3);//Overload(과적) 함수
-
-        int result = sum(10);
-        System.out.printf("sum is %d\n", result);
-
-    }//end main
-
-    private static int sum(int n) {//재귀함수.
-        if(n==1)
-            return  1;
-
-        return sum(n-1)+n;
-
-        //선택정렬
-        //버블정렬
-        //Quick Sort(재귀함수를 이용한 정렬 방법)
-    }
-
-//    private static int sum(int n) {
-//        int result = 0;
-//
-//        for (int i = 0; i < n; i++)
-//            result = result + (i+1);
-//
-//        return result;
-//    }
-
-    private static void examPrint(ExamList list) {//오버로드 함수
+    public static void examPrint(ExamList list) {//오버로드 함수
         int size = list.index;//전체내용 출력
         examPrint(list, size);
     }
 
-    private static void examPrint(ExamList list, int limit) {
-        Exam[] exams = list.exams;
-
+    public static void examPrint(ExamList list, int limit) {
         int size = limit;
+        Exam[] exams = list.exams;
 
         int num = 1;//성적 등수 확인용 숫자.
 
         for (int i = 0; i < size; i++) {
             Exam exam = exams[i];
+
             int kor = exam.kor;
             int eng = exam.eng;
             int math = exam.math;
@@ -76,7 +36,7 @@ public class ProgramUsingFunction {
 
     }
 
-    private static void examsort(ExamList list) {
+    public static void examsort(ExamList list) {
 
         Exam[] exams = list.exams;
         int size = list.index;
@@ -91,7 +51,7 @@ public class ProgramUsingFunction {
 
     }
 
-    private static void examLoad(ExamList list) throws IOException {
+    public static void examLoad(ExamList list) throws IOException {
 
         Exam[] exams = list.exams;
         int index = list.index;
@@ -131,5 +91,4 @@ public class ProgramUsingFunction {
         fscan.close();
         fis.close();
     }
-
-}//end class
+}

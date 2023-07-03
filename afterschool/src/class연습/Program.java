@@ -58,7 +58,7 @@ public class Program {
 
             saves[index++] = save;
 
-            list.index=index;
+            list.index=index;//핵심
         }
 
         scan.close();
