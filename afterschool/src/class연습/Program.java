@@ -24,15 +24,49 @@ public class Program {
         BirthdayLoad(list);
 
         BirthdayPrint(list);
+
+        sortBirthday(list);
+    }
+
+    private static void sortBirthday(BirthdayList list) {
+        Birthday[] saves= list.saves;
+        int index= list.index;
+
+        //문자열 정수로 변환
+        {
+            for (int i = 0; i < index; i++) {
+                saves[i].yymmdd = Integer.parseInt(saves[i].result);
+                System.out.println(saves[i].yymmdd);
+            }
+        }
+
+//        //정렬
+        {
+            for (int i = 0; i < index-1; i++)
+                for (int j = 0; j < index-1-i; j++)
+                    if (saves[j].yymmdd > saves[j + 1].yymmdd) {
+                        int temp = saves[j].yymmdd;
+                        saves[j].yymmdd = saves[j + 1].yymmdd;
+                        saves[j + 1].yymmdd = temp;
+                    }
+        }
+        //정렬한 내용 출력 완료
+        System.out.println();
+        System.out.println("정렬완료");
+        System.out.println();
+        for (int i = 0; i < index; i++) {
+            System.out.println(saves[i].yymmdd);
+        }
+
     }
 
     private static void BirthdayPrint(BirthdayList list) {
         Birthday[] saves= list.saves;
         int index= list.index;
         for (int i = 0; i < index; i++) {
-            for (int j = 0; j < 1; j++)
                 System.out.println(saves[i].result);
         }
+
 
     }
 
@@ -63,6 +97,5 @@ public class Program {
 
         scan.close();
         fis.close();
-
     }
 }
