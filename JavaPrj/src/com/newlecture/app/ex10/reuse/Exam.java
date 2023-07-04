@@ -8,4 +8,8 @@ public class Exam {
     int total=kor+eng+math;
 
     float avg=(float) total/3;
+
+    public static int 오목판(int a){
+        return 0;
+    }
 }// end class
