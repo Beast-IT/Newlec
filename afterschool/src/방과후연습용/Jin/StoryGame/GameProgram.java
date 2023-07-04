@@ -13,7 +13,7 @@ public class GameProgram {
         boolean onOff = false;
 
         //HP 초기값
-        int hp = 30;
+        int hp = 40;
 
         //HP 상태표시
         char hpBar = '▰';
@@ -45,7 +45,7 @@ public class GameProgram {
                     System.out.println("└───────────────────────────────────────┘");
                     hpFunction(hpBar, hpIndex);
                     System.out.println();
-                    hp = hp - 10;
+                    hp = 30;
                     onOff = false;
                     System.out.println("------------------------------------------------------------------");
                     break;
@@ -95,7 +95,7 @@ public class GameProgram {
                     System.out.println("  전문 산악인 KYN씨가 라면을 끓여먹고있었다. ");
                     System.out.println("    라면을 뺏어 먹으니 몸에서 힘이 난다!  ");
                     System.out.println("└───────────────────────────────────────┘");
-                    hpIndex++;
+                    hp=50;
                     hpFunction(hpBar, hpIndex);
                     System.out.println();
                     onOff = false;
@@ -153,7 +153,7 @@ public class GameProgram {
                     System.out.println(" 해가 떠있는줄 알았다! 이제 하산할 준비는 끝 ");
                     System.out.println("    체력이 0이 되면 죽으니 서두르자 ");
                     System.out.println("└───────────────────────────────────────┘");
-                    hp = hp - 20;
+                    hp = 30;
                     hpFunction(hpBar, hpIndex);
                     System.out.println();
                     onOff = false;
@@ -193,7 +193,7 @@ public class GameProgram {
             System.out.println("    걸어서갈까...? 아니면 뛰어서 갈까...?    ");
             System.out.println("      라면도 먹었으니...고민을 해야겠다.     ");
             System.out.println("└───────────────────────────────────────┘");
-            hpIndex--;
+            hp=20;
             hpFunction(hpBar, hpIndex);
             System.out.println();
             System.out.println("1. 뛰어간다.");
@@ -211,7 +211,7 @@ public class GameProgram {
                     System.out.println("       너무 시끄럽게 뛰어온건가...?        ");
                     System.out.println("      옆에서 이상한 소리가 들린다...        ");
                     System.out.println("└───────────────────────────────────────┘");
-                    hp = hp - 20;
+                    hp = 10;
                     hpFunction(hpBar, hpIndex);
                     System.out.println();
                     onOff = false;
@@ -250,7 +250,6 @@ public class GameProgram {
             System.out.println("    사실 손전등말고 칼도 훔치긴했는데...    ");
             System.out.println("             한판 붙어볼까?    ");
             System.out.println("└───────────────────────────────────────┘");
-            hpIndex--;
             hpFunction(hpBar, hpIndex);
             System.out.println();
             System.out.println("1. 싸운다.");
@@ -268,8 +267,7 @@ public class GameProgram {
                     System.out.println("       너무 크게 다쳐서 일어날 수 없다.       ");
                     System.out.println("     나는 이제...여기서 생으ㄹ........      ");
                     System.out.println("└───────────────────────────────────────┘");
-                    hpIndex--;
-                    hpIndex--;
+                    hp=10;
                     hpFunction(hpBar, hpIndex);
                     System.out.println();
                     onOff = false;
