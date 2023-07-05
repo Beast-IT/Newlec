@@ -207,8 +207,8 @@ public class GameProgram {
                 //1번 선택
                 case 1: {
                     System.out.println("┌───────────────────────────────────────┐");
-                    System.out.println("       뛰어서 내려가니 너무 숨이찬다.    ");
-                    System.out.println("       너무 시끄럽게 뛰어온건가...?        ");
+                    System.out.println("       뛰어서 내려가니 너무 숨이찬다.        ");
+                    System.out.println("       너무 시끄럽게 뛰어온건가...?         ");
                     System.out.println("      옆에서 이상한 소리가 들린다...        ");
                     System.out.println("└───────────────────────────────────────┘");
                     hp = 10;

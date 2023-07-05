@@ -31,6 +31,7 @@ public class ExamConsole {
         int kor = exam.getKor();
         int eng = exam.getEng();
         int math = exam.getMath();
+
         System.out.printf("kor : %d, eng : %d, math : %d\n", kor, eng, math);
         System.out.printf("total : %d\n", exam.total());
         System.out.printf("avg %.2f\n", exam.avg());
