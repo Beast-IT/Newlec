@@ -2,7 +2,8 @@ package com.newlecture.app.ex11.oop.basic;
 
 public class Program {
     public static void main(String[] args) {
-        Exam exam = new Exam(1,6);
+        Exam exam = new Exam();
+        //exam.kor=4;//private을 사용해서 캡슐화가 깨지는것 방지.
 
         exam.aa = 20;//잘못된 static 접근 방법
         Exam.aa = 100;//올바른 static 접근 방법
@@ -16,7 +17,7 @@ public class Program {
 //        System.out.printf("Instance Method eng : %d\n", exam.eng);
 //        exam.print();
 
-        System.out.println(exam.kor);
+        System.out.println();
 
     }
 
