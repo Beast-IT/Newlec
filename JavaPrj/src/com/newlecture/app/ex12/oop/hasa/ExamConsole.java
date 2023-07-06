@@ -1,8 +1,10 @@
-package com.newlecture.app.ex11.oop.hasa;
+package com.newlecture.app.ex12.oop.hasa;
 
 import java.util.Scanner;
 
 public class ExamConsole {
+
+    //Composition has a 관계
     private Exam exam = new Exam();// has a 상속관계/ A(ExamConsole)가 B(Exam)를 가지고 있다.
 
     public void input() {

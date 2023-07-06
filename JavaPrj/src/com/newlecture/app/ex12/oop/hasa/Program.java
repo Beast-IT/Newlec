@@ -1,4 +1,4 @@
-package com.newlecture.app.ex11.oop.hasa;
+package com.newlecture.app.ex12.oop.hasa;
 
 import java.io.IOException;
 
