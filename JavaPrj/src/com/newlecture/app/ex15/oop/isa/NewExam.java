@@ -1,15 +1,21 @@
 package com.newlecture.app.ex15.oop.isa;
 
 public class NewExam extends Exam{
-    //Has a 부품명
-    //Exam exam;
-    //
-
     private int com;
+
+    //하위클래스의 초기화
+    public NewExam(){
+        this(0,0,0,0);
+    }
+    //하위클래스의 초기화
+    public NewExam(int kor, int eng, int math,int com) {
+        super(kor, eng, math);
+        this.com=com;
+    }
 
     @Override
     public int total() {
-        return super.total()+com;
+        return super.total()+this.com;
     }
 
     public int getCom() {

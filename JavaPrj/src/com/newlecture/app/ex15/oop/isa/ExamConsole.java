@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ExamConsole {
 
-    private Exam[] exams; // 가질 수 있도록 선언만 되어있고 부품이 빠져있는 상태. association has a
+    private Exam[] exams;
     private int index;
 
     public ExamConsole() {

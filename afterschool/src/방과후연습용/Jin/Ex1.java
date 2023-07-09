@@ -8,18 +8,18 @@ public class Ex1 {
 	public static void main(String[] args) throws IOException {
 
 		
-		Scanner sc = new Scanner(System.in);
-		int a = sc.nextInt();
-		
-		while(true) {
-			System.out.println(a);
-			while (true) {
-				System.out.println("가즈아");
-			}
-		}
-		
-		
-		
+//		Scanner sc = new Scanner(System.in);
+//		int a = sc.nextInt();
+//
+//		while(true) {
+//			System.out.println(a);
+//			while (true) {
+//				System.out.println("가즈아");
+//			}
+//		}
+
+		System.out.print("dddd.");
+		System.out.print("\b");
 		
 		/*
 		

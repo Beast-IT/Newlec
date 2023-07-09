@@ -10,20 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e70a445e-e440-414e-91f7-66a2547bc808" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex13/oop/hasa/association/Exam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex13/oop/hasa/association/ExamConsole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex13/oop/hasa/association/Program.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex14/hasa/aggregation/Exam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex14/hasa/aggregation/ExamConsole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex14/hasa/aggregation/Program.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex15/oop/isa/Exam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex15/oop/isa/ExamConsole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex15/oop/isa/NewExam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex15/oop/isa/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex15/oop/isa/GameFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/com/test/service/SubwayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/com/test/service/SubwayService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex11/oop/hasa/Exam.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex12/oop/hasa/Exam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex11/oop/hasa/ExamConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex12/oop/hasa/ExamConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex11/oop/hasa/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex12/oop/hasa/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex13/oop/hasa/association/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex13/oop/hasa/association/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex15/oop/isa/ExamConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex15/oop/isa/ExamConsole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex15/oop/isa/NewExam.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex15/oop/isa/NewExam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex15/oop/isa/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex15/oop/isa/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +72,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.newlecture.app.ex15.oop.isa" />
       <recent name="com.newlecture.app.ex9.struct" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -135,7 +131,13 @@
       <workItem from="1688456969231" duration="16021000" />
       <workItem from="1688546851459" duration="2607000" />
       <workItem from="1688566891366" duration="19206000" />
-      <workItem from="1688633025157" duration="1927000" />
+      <workItem from="1688633025157" duration="3912000" />
+      <workItem from="1688641610952" duration="1235000" />
+      <workItem from="1688642879381" duration="760000" />
+      <workItem from="1688652277374" duration="13064000" />
+      <workItem from="1688701612972" duration="14495000" />
+      <workItem from="1688774448190" duration="3174000" />
+      <workItem from="1688817614644" duration="6211000" />
     </task>
     <servers />
   </component>
