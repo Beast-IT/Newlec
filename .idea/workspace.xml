@@ -10,15 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e70a445e-e440-414e-91f7-66a2547bc808" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex15/oop/isa/GameFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/com/test/service/SubwayController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/com/test/service/SubwayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex16/oop/abst/Exam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex16/oop/abst/NewExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex16/oop/abst/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex17/oop/abst/custom/Exam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex17/oop/abst/custom/ExamConsole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex17/oop/abst/custom/NewExam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex17/oop/abst/custom/NewExamConsole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex17/oop/abst/custom/Program.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/com/test/service/SubwayService1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex13/oop/hasa/association/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex13/oop/hasa/association/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex15/oop/isa/ExamConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex15/oop/isa/ExamConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex15/oop/isa/NewExam.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex15/oop/isa/NewExam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex15/oop/isa/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaPrj/src/com/newlecture/app/ex15/oop/isa/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/Ex1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/com/test/service/SubwayController.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/com/test/service/SubwayController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/com/test/service/SubwayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/afterschool/src/방과후연습용/Jin/com/test/service/SubwayService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,47 +55,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Workspace/Newlec/JavaPrj/src/com/newlecture/app/ex15/oop/isa&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Console Font&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Workspace/Newlec/JavaPrj/src/com/newlecture/app/ex17/oop/abst/custom",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Font",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.newlecture.app.ex17.oop.abst.custom" />
       <recent name="com.newlecture.app.ex15.oop.isa" />
       <recent name="com.newlecture.app.ex9.struct" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\Newlec\JavaPrj\src\com\newlecture\app\ex17\oop\abst\custom" />
+      <recent name="D:\Workspace\Newlec\JavaPrj\src\com\newlecture\app\ex16\oop\abst" />
       <recent name="D:\Workspace\Newlec\JavaPrj\src\com\newlecture\app\ex15\oop\isa" />
       <recent name="D:\Workspace\Newlec\JavaPrj\src\com\newlecture\app\ex14\hasa\aggregation" />
       <recent name="D:\Workspace\Newlec\JavaPrj\src\com\newlecture\app\ex11\oop\hasa\association" />
-      <recent name="D:\Workspace\Newlec\JavaPrj\src\com\newlecture\app\ex11\oop\hasa" />
-      <recent name="D:\Workspace\Newlec\JavaPrj\src\com\newlecture\app\ex11\oop\basic" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Workspace\Newlec\afterschool\src" />
       <recent name="D:\Workspace\Newlec\JavaPrj\res" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.newlecture.app.ex17.oop.abst.custom" />
       <recent name="com.newlecture.app.ex11.oop.basic" />
       <recent name="com.newlecture.app.ex10.reuse" />
       <recent name="방과후연습용.Jin" />
       <recent name="com.newlecture.app.ex9.struct" />
-      <recent name="com.newlecture.app.ex8.function" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -137,7 +142,8 @@
       <workItem from="1688652277374" duration="13064000" />
       <workItem from="1688701612972" duration="14495000" />
       <workItem from="1688774448190" duration="3174000" />
-      <workItem from="1688817614644" duration="6211000" />
+      <workItem from="1688817614644" duration="15829000" />
+      <workItem from="1688948814797" duration="25737000" />
     </task>
     <servers />
   </component>
@@ -166,6 +172,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="3" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="5" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

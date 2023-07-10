@@ -2,14 +2,17 @@ package 방과후연습용.Jin.com.test.service;
 
 import java.util.Scanner;
 
-class SubwayService {
-    private String[] trainStations= {"합정", "홍대입구", "신촌", "이대", "아현"};
+public class SubwayService1 {
+    private String[] trainStations = {"합정", "홍대입구", "신촌", "이대", "아현"};
     private boolean[] trainAvailability = new boolean[4];
     private int[] passengerCount = new int[4];
     private int currentStationIndex = 0;
 
-    public SubwayService() {
-        resetTrainAvailability();
+    private String[][] passengerStations = new String[4][4];
+
+    public SubwayService1() {
+        for (int i = 0; i < trainAvailability.length; i++)
+            trainAvailability[i] = true;
     }
 
     public void run() {
@@ -46,21 +49,16 @@ class SubwayService {
 
     private void join() {
         Scanner sc = new Scanner(System.in);
-        boolean availableTrain = false;
 
         System.out.println("---- 탑승가능 현황 ----");
 
         for (int i = 0; i < trainAvailability.length; i++) {
-            if (trainAvailability[i] && passengerCount[i] < 4) {
-                availableTrain = true;
+            if (passengerCount[i] <= 3) {
+                trainAvailability[i] = true;
                 System.out.println((i + 1) + "호차 : 가능");
             } else {
                 System.out.println((i + 1) + "호차 : 불가능");
             }
-        }
-
-        if (!availableTrain) {
-            System.out.println("탑승가능 열차가 없습니다.");
         }
 
         System.out.println("어느 열차에 탑승하시겠습니까?");
@@ -68,17 +66,29 @@ class SubwayService {
 
         int trainIndex = Integer.parseInt(sc.nextLine()) - 1;
 
-        if (trainAvailability[trainIndex] && passengerCount[trainIndex] < 3) {
+        if (trainAvailability[trainIndex] && passengerCount[trainIndex] <= 3) {
             System.out.println("목적지를 선택해 주세요.");
 
-            for (int i = currentStationIndex + 1; i < trainStations.length; i++) {
-                System.out.print((i + 1) + "." + trainStations[i]+" ");
+            //현재역 제외한 역 출력
+            for (int i = 0; i < trainStations.length; i++) {
+                if (currentStationIndex == i)
+                    continue;
+                System.out.print((i + 1) + "." + trainStations[i] + " ");
             }
-
+//
+            //목적지 입력
             int destinationIndex = Integer.parseInt(sc.nextLine()) - 1;
+            int incArray = passengerCount[trainIndex];
 
-            if (destinationIndex >= currentStationIndex + 1 && destinationIndex < trainStations.length) {
-                passengerCount[trainIndex]++;
+            if (destinationIndex != currentStationIndex) {
+                for (int i = 0; i < 4; i++) {
+                    if (passengerStations[trainIndex][i] == null) {
+                        passengerStations[trainIndex][i] = trainStations[destinationIndex];
+                        passengerCount[trainIndex]++;
+                        break;
+                    }
+                }
+
                 System.out.println("탑승되었습니다.");
 
                 if (passengerCount[trainIndex] == 4) {
@@ -92,64 +102,36 @@ class SubwayService {
         }
     }
 
-
-
-
     private void status() {
         System.out.println("---- 열차 현황 ----");
 
-        for (int i = 0; i < trainAvailability.length; i++) {
+        for (int i = 0; i < passengerStations.length; i++) {
             System.out.print((i + 1) + "호차 : ");
-            if (trainAvailability[i]) {
-                String destinations = getDestinations(i);
-                if (!destinations.isEmpty()) {
-                    System.out.println(destinations);
-                } else {
-                    System.out.println("목적지 없음");
+            for (int j = 0; j < passengerStations.length; j++)
+                if (!(passengerStations[i][j] == null)) {
+                    System.out.printf("[%s]", passengerStations[i][j]);
                 }
-            } else {
-                System.out.println("운행 종료");
-            }
+            System.out.println();
         }
-    }
-
-
-    private String getDestinations(int trainIndex) {
-        StringBuilder destinations = new StringBuilder();
-
-        for (int i = currentStationIndex; i < currentStationIndex + passengerCount[trainIndex]; i++) {
-            destinations.append("[").append(trainStations[i]).append("] ");
-        }
-
-        return destinations.toString().trim();
     }
 
     private void move() {
-        int disembarkedCount = 0;
-        int[] disembarkedPassengers = new int[4];
+        if (currentStationIndex >= 4)
+            currentStationIndex = 0;
+        else
+            currentStationIndex++;
 
-        for (int i = 0; i < passengerCount.length; i++) {
-            if (passengerCount[i] > 0 && (currentStationIndex + passengerCount[i]) % trainStations.length == 0) {
-                disembarkedPassengers[i] = passengerCount[i];
-                disembarkedCount += passengerCount[i];
-                passengerCount[i] = 0;
-                trainAvailability[i] = true;
-            }
-        }
+        int out = 0;
 
-        System.out.println(disembarkedCount + "명이 하차하였습니다.");
+        for (int i = 0; i < 4; i++)
+            for (int j = 0; j < 4; j++)
+                if (trainStations[currentStationIndex].equals(passengerStations[i][j])) {
+                    out++;
+                    passengerStations[i][j] = null;
+                    passengerCount[i]--;
+                }
 
-        currentStationIndex = (currentStationIndex + 1) % trainStations.length;
-        resetTrainAvailability();
-    }
+        System.out.printf("%d 명이 하차했습니다.\n\n", out);
 
-
-
-
-
-    private void resetTrainAvailability() {
-        for (int i = 0; i < trainAvailability.length; i++) {
-            trainAvailability[i] = true;
-        }
     }
 }

@@ -10,8 +10,6 @@ public class Program {
         frame.setVisible(true);
         frame.setBackground(Color.pink);
 
-
-
 //        NewExam exam = new NewExam();
 //        exam.setKor(10);
 //        exam.setEng(20);
