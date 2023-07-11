@@ -1,5 +1,7 @@
 package 방과후연습용.Jin.com.test.service;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class SubwayService1 {
@@ -8,6 +10,7 @@ public class SubwayService1 {
     private int[] passengerCount = new int[4];
     private int currentStationIndex = 0;
 
+
     private String[][] passengerStations = new String[4][4];
 
     public SubwayService1() {
@@ -15,14 +18,29 @@ public class SubwayService1 {
             trainAvailability[i] = true;
     }
 
-    public void run() {
+    public void run() throws IOException {
         Scanner sc = new Scanner(System.in);
         String menu;
 
         do {
+            String current= String.valueOf(currentStationIndex);
+
             System.out.println("=================================");
-            System.out.println("현재역은 " + trainStations[currentStationIndex] + "입니다.");
+            System.out.println("      현재역은 " + trainStations[currentStationIndex] + "입니다.");
             System.out.println("=================================");
+            System.out.println("        [지하철 운행현황]");
+            System.out.println();
+            print(current+".txt");
+            //아래코드는 기존 전광판
+//            for (int i = 0; i < trainStations.length; i++) {
+//                if (currentStationIndex == i)
+//                    System.out.printf("[%s] ", trainStations[currentStationIndex]);
+//                else
+//                    System.out.printf("%s ",trainStations[i]);
+//            }
+            System.out.println();
+            System.out.println("=================================");
+            System.out.println();
             System.out.println("메뉴를 선택하세요.");
             System.out.println("1.탑승 2.상세보기 3.이동 9.종료");
 
@@ -134,4 +152,18 @@ public class SubwayService1 {
         System.out.printf("%d 명이 하차했습니다.\n\n", out);
 
     }
+    public void print(String filename)throws IOException {
+        String path = "afterschool/res/Subway/"+filename;
+        FileInputStream fis = new FileInputStream(path);
+        Scanner scan=new Scanner(fis);
+
+        while(scan.hasNextLine()){
+            String read=scan.nextLine();
+            System.out.println(read);
+        }
+
+        scan.close();
+        fis.close();
+    }
+
 }
