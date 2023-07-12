@@ -14,7 +14,5 @@ public class SubwayController {
         System.out.println("---- Welcome Subway ----");
 
         ss.run();
-
-
     }
 }

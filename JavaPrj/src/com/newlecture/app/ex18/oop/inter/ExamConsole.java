@@ -5,6 +5,16 @@ import java.util.Scanner;
 public class ExamConsole {
 
     private PrintListener printListener;
+    private BannerPrint bannerPrint;
+    private ExPrinter exPrinter;
+
+    public void setBannerPrint(BannerPrint bannerPrint) {
+        this.bannerPrint = bannerPrint;
+    }
+
+    public void setExPrinter(ExPrinter exPrinter) {
+        this.exPrinter = exPrinter;
+    }
 
     public void setPrintListener(PrintListener printListener) {
         this.printListener = printListener;
@@ -40,7 +50,12 @@ public class ExamConsole {
 
     public void print() {
 
-        printListener.printBanner();
+        //조건처리!(printListener가 사용되지 않으면 에러뜸)
+        //그래서 이렇게 조건 처리해줌
+        if (bannerPrint != null)
+            bannerPrint.printBanner();
+        else if (printListener != null)
+            printListener.printBanner();
 
         int kor = exam.getKor();
         int eng = exam.getEng();
@@ -49,7 +64,11 @@ public class ExamConsole {
         System.out.printf("kor : %d\n", kor);
         System.out.printf("eng : %d\n", eng);
         System.out.printf("math : %d\n", math);
-        printListener.printEx();
+
+        if (exPrinter != null)
+            exPrinter.printEx();
+        else if (printListener != null)
+            printListener.printEx();
     }
 
 //    protected abstract void printEx();
